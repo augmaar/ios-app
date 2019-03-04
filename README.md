@@ -67,4 +67,4 @@ Evaluate app across the following categories using the [App Evaluation Protocol]
 ---
 ### Wireframes
 // TODO: Add Wireframe Images
-![alt text](https://raw.github.com/augmaar/ios-app/tree/master/Augma/wireframes/GalleryView.png)
+![alt text](https://github.com/augmaar/ios-app/tree/master/Augma/wireframes/GalleryView.png?raw=true)
