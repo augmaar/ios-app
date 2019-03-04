@@ -15,9 +15,10 @@ Evaluate app across the following categories using the [App Evaluation Protocol]
     - Anyone looking to buy a painting or picture can search through our platform and see how products that they are interested in would look in their own space.
 - *Habit*: 
     - Artists and photographers will be using this application daily to view other people's work and also to see how much of their own work has been sold.
-    - 
+    - Non-artists looking to buy pictures and paintings may use the app less frequently
 - *Scope*:
-
+    - In it's simplist form, this app is an AR viewer that allows user to see their pictures on a wall.
+    - We would like to build upon this and add a social marketplace aspect to it, allowing users to buy and sell paintings on the platform
 
 ---
 
