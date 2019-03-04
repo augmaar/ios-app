@@ -23,17 +23,22 @@ Evaluate app across the following categories using the [App Evaluation Protocol]
 
 ### User Stories
 
-1. User can upload pictures
-2. User can view pictures on their own wall with AR
-3. User can view feed of all other pictures posted to the site
-4. User can submit a request to "purchase" a picture
+**Required Must-have Stories**
+- [ ] User can upload pictures  
+- [ ] User can view pictures on their own wall with AR  
+- [ ] User can view feed of other pictures posted to the site  
+- [ ] User can submit a request to "purchase" a picture  
+
+**Optional Nice-to-have Stories**
+- [ ] User can search for users
+- [ ] User can follow other users
+- [ ] User can "bookmark" pictures for later
+- [ ] User can search for pictures/paintings by tag
+- [ ] User can search for pictures/paintings by location
+
 
 ---
 
 ### Wireframes
 // TODO: Add Wireframe Images
 
----
-
-### App Pitch Presentation
-// TODO: Add link to Pitch Presentation Deck
