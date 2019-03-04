@@ -66,5 +66,11 @@ Evaluate app across the following categories using the [App Evaluation Protocol]
 
 ---
 ### Wireframes
-// TODO: Add Wireframe Images
+### Login View
+![LoginView](/Augma/wireframes/LoginView.png?raw=true)
+
+### Gallery View
 ![GalleryView](/Augma/wireframes/GalleryView.png?raw=true)
+
+### Product View
+![ProductView](/Augma/wireframes/ProductView.png?raw=true)
