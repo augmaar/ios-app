@@ -43,11 +43,8 @@ Evaluate app across the following categories using the [App Evaluation Protocol]
 
  * Login Screen
      * User can login
-     * User can create new accounts 
- * Main Screen
-     * User can view feed of other pictures 
  * Search Screen
-     * User can search up paintings 
+     * User can search up pictures/paintings by topic 
  * Upload Screen
      * User can upload pictures 
  * Profile Screen
@@ -58,12 +55,17 @@ Evaluate app across the following categories using the [App Evaluation Protocol]
 ### Navigation
 
 **Tab Navigation** (Tab to Screen)
-
- * Main Screen
  * Search Screen
  * Upload Screen
  * Profile Screen
 
 ---
 ### Wireframes
-// TODO: Add Wireframe Images
+### Login View
+![LoginView](/Augma/wireframes/LoginView.png?raw=true)
+
+### Gallery View
+![GalleryView](/Augma/wireframes/GalleryView.png?raw=true)
+
+### Product View
+![ProductView](/Augma/wireframes/ProductView.png?raw=true)
