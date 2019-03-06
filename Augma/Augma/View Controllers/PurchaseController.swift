@@ -1,14 +1,14 @@
 //
-//  FeedController.swift
+//  PurchaseController.swift
 //  Augma
 //
-//  Created by Chase Carnaroli on 3/3/19.
+//  Created by Chase Carnaroli on 3/6/19.
 //  Copyright © 2019 Chase Carnaroli. All rights reserved.
 //
 
 import UIKit
 
-class FeedController: UIViewController {
+class PurchaseController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
