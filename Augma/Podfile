@@ -7,5 +7,6 @@ target 'Augma' do
 
   # Pods for Augma
   pod "AlamofireImage"
+  pod "Parse"
 
 end
