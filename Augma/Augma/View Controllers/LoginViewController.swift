@@ -17,11 +17,23 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var createAccountButton: UIButton!
     
     @IBAction func loginButton(_ sender: Any) {
-        
+        print("Email: \(emailField!)")
+        print("Password: \(passwordField!)")
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.yellow
+        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+        backgroundImage.image = UIImage(named: "LoginBG.png")
+        backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
+        self.view.insertSubview(backgroundImage, at: 0)
+        /*
+        let image = UIImage(named: "LoginBG.png")
+        if (image != nil) {
+            self.view.backgroundColor = UIColor(patternImage: image!)
+        } else {
+            self.view.backgroundColor = UIColor.red
+        }*/
+        
         // Do any additional setup after loading the view.
     }
     

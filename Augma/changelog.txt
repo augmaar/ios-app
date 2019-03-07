@@ -1,4 +1,6 @@
 --3/7/19--
 - Podded and installed AlamofireImage
 - Added and designed LoginViewController
+- Added constraints to LoginViewController elements
+
 - 
