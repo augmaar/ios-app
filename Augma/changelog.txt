@@ -1,0 +1,3 @@
+--3/7/19--
+- Podded and installed AlamofireImage
+- 
