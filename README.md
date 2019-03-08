@@ -36,6 +36,7 @@ Evaluate app across the following categories using the [App Evaluation Protocol]
 - [ ] User can "bookmark" pictures for later
 - [ ] User can search for pictures/paintings by tag
 - [ ] User can search for pictures/paintings by location
+- [ ] User can view multiple photos on their wall at once
 
 
 ---
