@@ -96,5 +96,15 @@ class SearchController: UIViewController, UICollectionViewDelegate, UICollection
         print(filteredArtwork[indexPath.item]["original_title"]!)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let cell = sender as! UICollectionViewCell
+        let indexPath = collectionView.indexPath(for: cell)!
+        
+        let piece = filteredArtwork[indexPath.row]
+        
+        let pictureVC = segue.destination as! PictureViewController
+        
+        pictureVC.piece = piece
+    }
     
 }
