@@ -18,7 +18,6 @@ class LoginViewController: UIViewController {
         user.username = emailField.text
         user.password = passwordField.text
         
-        print(emailField.text!)
         user.signUpInBackground { (success, error) in
             if success {
                 self.performSegue(withIdentifier: "menuSegue", sender: nil)
@@ -49,7 +48,7 @@ class LoginViewController: UIViewController {
         backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 0)
         
-        
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: Selector("endEditing:")))
 
     }
 }
