@@ -8,5 +8,6 @@ target 'Augma' do
   # Pods for Augma
   pod "AlamofireImage"
   pod "Parse"
+  pod "TagListView", "~> 1.0"
 
 end
