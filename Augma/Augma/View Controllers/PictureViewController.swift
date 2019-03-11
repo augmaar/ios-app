@@ -23,14 +23,6 @@ class PictureViewController: UIViewController {
     
     
     
-    @IBAction func arViewButton(_ sender: Any) {
-        print("AR View loading...")
-    }
-    
-    @IBAction func purchaseButton(_ sender: Any) {
-        print("Purchasing item...")
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)

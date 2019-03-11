@@ -287,8 +287,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="purchaseButton:" destination="zI1-zg-x5C" eventType="touchUpInside" id="HOk-wf-Pir"/>
-                                    <segue destination="wMp-0w-05I" kind="show" identifier="PurchaseSegue" id="ZyP-tZ-7Di"/>
+                                    <segue destination="wMp-0w-05I" kind="presentation" id="YsY-fd-TLl"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="252" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RuM-r3-o3Y">
@@ -306,7 +305,6 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="arViewButton:" destination="zI1-zg-x5C" eventType="touchUpInside" id="nwh-T0-4DD"/>
                                     <segue destination="gft-Zq-WX2" kind="presentation" identifier="ARSegue" id="TvP-wu-hft"/>
                                 </connections>
                             </button>
@@ -389,7 +387,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="O2k-SB-pcL">
-                                <rect key="frame" x="70" y="84" width="235" height="235"/>
+                                <rect key="frame" x="70" y="40" width="235" height="235"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="O2k-SB-pcL" secondAttribute="height" multiplier="1:1" id="N0o-Q3-Q9r"/>
                                 </constraints>
