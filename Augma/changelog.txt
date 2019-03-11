@@ -3,4 +3,8 @@
 - Added and designed LoginViewController
 - Added constraints to LoginViewController elements
 
+3/10/19
+- Implemented search functionality
+
+
 - 

@@ -10,6 +10,7 @@
 		5040DD682231DBB4008DA313 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9BC088E222CEE8F0025F2A5 /* Info.plist */; };
 		50CDDC382235DFE5002FF718 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CDDC372235DFE5002FF718 /* Grid.swift */; };
 		C609A7662231A6C400522626 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C609A7652231A6C400522626 /* LoginViewController.swift */; };
+		C6733C9F2235F4AC00B3F590 /* PictureGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6733C9E2235F4AC00B3F590 /* PictureGridCell.swift */; };
 		C68C9D692235EE1E00799C9F /* Lato2OFL in Resources */ = {isa = PBXBuildFile; fileRef = C68C9D682235EE1E00799C9F /* Lato2OFL */; };
 		C9BC0883222CEE8C0025F2A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BC0882222CEE8C0025F2A5 /* AppDelegate.swift */; };
 		C9BC0888222CEE8C0025F2A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9BC0886222CEE8C0025F2A5 /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 		4F2FF0D6E996A1760820A7DB /* Pods-Augma.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Augma.release.xcconfig"; path = "Pods/Target Support Files/Pods-Augma/Pods-Augma.release.xcconfig"; sourceTree = "<group>"; };
 		50CDDC372235DFE5002FF718 /* Grid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Grid.swift; path = "Augma/Helper Files/Grid.swift"; sourceTree = SOURCE_ROOT; };
 		C609A7652231A6C400522626 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C6733C9E2235F4AC00B3F590 /* PictureGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureGridCell.swift; sourceTree = "<group>"; };
 		C68C9D682235EE1E00799C9F /* Lato2OFL */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Lato2OFL; path = Assets.xcassets/Lato2OFL; sourceTree = "<group>"; };
 		C9BC087F222CEE8C0025F2A5 /* Augma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Augma.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9BC0882222CEE8C0025F2A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				C9BC0897222CF7EE0025F2A5 /* SearchController.swift */,
+				C6733C9E2235F4AC00B3F590 /* PictureGridCell.swift */,
 				C9BC0899222CF8060025F2A5 /* UploadController.swift */,
 				C9BC089B222CF8190025F2A5 /* ProfileController.swift */,
 				C9BC089D222CF83B0025F2A5 /* PictureViewController.swift */,
@@ -274,6 +277,7 @@
 				C9BC089C222CF8190025F2A5 /* ProfileController.swift in Sources */,
 				50CDDC382235DFE5002FF718 /* Grid.swift in Sources */,
 				C9BC089E222CF83B0025F2A5 /* PictureViewController.swift in Sources */,
+				C6733C9F2235F4AC00B3F590 /* PictureGridCell.swift in Sources */,
 				C609A7662231A6C400522626 /* LoginViewController.swift in Sources */,
 				C9BC0883222CEE8C0025F2A5 /* AppDelegate.swift in Sources */,
 				C9BC0898222CF7EE0025F2A5 /* SearchController.swift in Sources */,
@@ -427,13 +431,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VG2KVJN294;
+				DEVELOPMENT_TEAM = 9NZM4H7RMP;
 				INFOPLIST_FILE = Augma/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Rodrigo-Leyva";
+				PRODUCT_BUNDLE_IDENTIFIER = "Tam-Nguyen";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
@@ -448,13 +452,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VG2KVJN294;
+				DEVELOPMENT_TEAM = 9NZM4H7RMP;
 				INFOPLIST_FILE = Augma/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Rodrigo-Leyva";
+				PRODUCT_BUNDLE_IDENTIFIER = "Tam-Nguyen";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
