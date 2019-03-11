@@ -12,8 +12,8 @@ import Foundation
 enum Segue: String {
     
 }
-
-enum Cell: String {
-    
-}
 */
+enum Cell: String {
+    case PictureGridCell = "PictureGridCell"
+}
+

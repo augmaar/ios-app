@@ -102,6 +102,7 @@
 				C9BC0882222CEE8C0025F2A5 /* AppDelegate.swift */,
 				C9BC08A3223338AB0025F2A5 /* Storyboards */,
 				C9BC0894222CF7D00025F2A5 /* View Controllers */,
+				C9BC08A922360A460025F2A5 /* Cells */,
 				C9BC08A622333A1D0025F2A5 /* Helper Files */,
 				C9BC0889222CEE8F0025F2A5 /* Assets.xcassets */,
 				C68C9D682235EE1E00799C9F /* Lato2OFL */,
@@ -114,7 +115,6 @@
 			isa = PBXGroup;
 			children = (
 				C9BC0897222CF7EE0025F2A5 /* SearchController.swift */,
-				C6733C9E2235F4AC00B3F590 /* PictureGridCell.swift */,
 				C9BC0899222CF8060025F2A5 /* UploadController.swift */,
 				C9BC089B222CF8190025F2A5 /* ProfileController.swift */,
 				C9BC089D222CF83B0025F2A5 /* PictureViewController.swift */,
@@ -142,6 +142,15 @@
 				C9BC08A722333A570025F2A5 /* Enums.swift */,
 			);
 			path = "Helper Files";
+			sourceTree = "<group>";
+		};
+		C9BC08A922360A460025F2A5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C6733C9E2235F4AC00B3F590 /* PictureGridCell.swift */,
+			);
+			name = Cells;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
