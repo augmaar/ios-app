@@ -188,7 +188,7 @@
                                         <connections>
                                             <outlet property="pictureView" destination="de2-kJ-vLk" id="qKu-SK-7Lk"/>
                                             <outlet property="priceLabel" destination="guT-0c-TgA" id="tQA-H9-OgH"/>
-                                            <segue destination="zI1-zg-x5C" kind="show" id="LVI-lS-msS"/>
+                                            <segue destination="zI1-zg-x5C" kind="show" identifier="PicturePreviewSegue" id="LVI-lS-msS"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -305,7 +305,7 @@
                                 </state>
                                 <connections>
                                     <action selector="purchaseButton:" destination="zI1-zg-x5C" eventType="touchUpInside" id="HOk-wf-Pir"/>
-                                    <segue destination="wMp-0w-05I" kind="show" id="ZyP-tZ-7Di"/>
+                                    <segue destination="wMp-0w-05I" kind="show" identifier="PurchaseSegue" id="ZyP-tZ-7Di"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RuM-r3-o3Y">
@@ -320,7 +320,7 @@
                                 </state>
                                 <connections>
                                     <action selector="arViewButton:" destination="zI1-zg-x5C" eventType="touchUpInside" id="nwh-T0-4DD"/>
-                                    <segue destination="gft-Zq-WX2" kind="presentation" id="TvP-wu-hft"/>
+                                    <segue destination="gft-Zq-WX2" kind="presentation" identifier="ARSegue" id="TvP-wu-hft"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DSD-Bc-Hv1">

@@ -8,11 +8,13 @@
 
 import Foundation
 
-/*
+
 enum Segue: String {
-    
+    case PicturePreview = "PicturePreviewSegue"
+    case Purchase = "PurchaseSegue"
+    case AR = "ARSegue"
 }
-*/
+
 enum Cell: String {
     case PictureGridCell = "PictureGridCell"
 }
