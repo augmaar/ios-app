@@ -9,15 +9,23 @@
 import UIKit
 import Parse
 import AlamofireImage
+import TagListView
 
-class UploadController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class UploadController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
 
     @IBOutlet weak var photoView: UIImageView!
+    @IBOutlet weak var tagListView: TagListView!
+    @IBOutlet weak var priceTextField: UITextField!
+    @IBOutlet weak var tagsTextField: UITextField!
+    
+    var tags = ["Add", "two", "tags"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tagsTextField.delegate = self
 
-        // Do any additional setup after loading the view.
+        tagListView.addTags(tags)
     }
    
     @IBAction func onUploadButton(_ sender: Any) {
@@ -46,5 +54,18 @@ class UploadController: UIViewController, UIImagePickerControllerDelegate, UINav
         dismiss(animated: true, completion: nil)
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        print("return key pressed")
+        let input = tagsTextField.text?.components(separatedBy: CharacterSet.whitespaces)
+        
+        if input != nil {
+            tags += input!
+        }
+        
+        tagsTextField.text = nil
+        tagListView.addTags(input!)
+        
+        return true
+    }
 
 }
