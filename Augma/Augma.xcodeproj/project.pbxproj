@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5040DD672231DA36008DA313 /* Lato2OFL in Resources */ = {isa = PBXBuildFile; fileRef = 5040DD662231DA36008DA313 /* Lato2OFL */; };
 		5040DD682231DBB4008DA313 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9BC088E222CEE8F0025F2A5 /* Info.plist */; };
 		50CDDC382235DFE5002FF718 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CDDC372235DFE5002FF718 /* Grid.swift */; };
 		C609A7662231A6C400522626 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C609A7652231A6C400522626 /* LoginViewController.swift */; };
+		C68C9D672235EDA500799C9F /* Lato2OFL in Resources */ = {isa = PBXBuildFile; fileRef = C68C9D662235EDA400799C9F /* Lato2OFL */; };
 		C9BC0883222CEE8C0025F2A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BC0882222CEE8C0025F2A5 /* AppDelegate.swift */; };
 		C9BC0888222CEE8C0025F2A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9BC0886222CEE8C0025F2A5 /* Main.storyboard */; };
 		C9BC088A222CEE8F0025F2A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9BC0889222CEE8F0025F2A5 /* Assets.xcassets */; };
@@ -29,9 +29,9 @@
 		059F41E5C6D96A310C96BECA /* Pods_Augma.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Augma.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E418ABAED597E3157396917 /* Pods-Augma.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Augma.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Augma/Pods-Augma.debug.xcconfig"; sourceTree = "<group>"; };
 		4F2FF0D6E996A1760820A7DB /* Pods-Augma.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Augma.release.xcconfig"; path = "Pods/Target Support Files/Pods-Augma/Pods-Augma.release.xcconfig"; sourceTree = "<group>"; };
-		5040DD662231DA36008DA313 /* Lato2OFL */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Lato2OFL; path = ../../../../Downloads/Lato2OFL; sourceTree = "<group>"; };
 		50CDDC372235DFE5002FF718 /* Grid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Grid.swift; path = "../../../../../Downloads/Assets 2/Grid.swift"; sourceTree = "<group>"; };
 		C609A7652231A6C400522626 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C68C9D662235EDA400799C9F /* Lato2OFL */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Lato2OFL; path = ../../../Lato2OFL; sourceTree = "<group>"; };
 		C9BC087F222CEE8C0025F2A5 /* Augma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Augma.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9BC0882222CEE8C0025F2A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9BC0887222CEE8C0025F2A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 				C9BC08A622333A1D0025F2A5 /* Helper Files */,
 				C9BC0889222CEE8F0025F2A5 /* Assets.xcassets */,
 				C9BC088E222CEE8F0025F2A5 /* Info.plist */,
-				5040DD662231DA36008DA313 /* Lato2OFL */,
+				C68C9D662235EDA400799C9F /* Lato2OFL */,
 			);
 			path = Augma;
 			sourceTree = "<group>";
@@ -204,7 +204,7 @@
 				C9BC088D222CEE8F0025F2A5 /* LaunchScreen.storyboard in Resources */,
 				5040DD682231DBB4008DA313 /* Info.plist in Resources */,
 				C9BC088A222CEE8F0025F2A5 /* Assets.xcassets in Resources */,
-				5040DD672231DA36008DA313 /* Lato2OFL in Resources */,
+				C68C9D672235EDA500799C9F /* Lato2OFL in Resources */,
 				C9BC0888222CEE8C0025F2A5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
