@@ -10,7 +10,12 @@ import UIKit
 
 class PictureViewController: UIViewController {
 
+    @IBOutlet weak var purchaseButton: UIButton!
     @IBOutlet weak var pictureView: UIImageView!
+    @IBOutlet weak var descriptionField: UITextView!
+    @IBOutlet weak var arButton: UIButton!
+    @IBOutlet weak var priceField: UITextField!
+    @IBOutlet weak var tagField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
