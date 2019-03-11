@@ -10,16 +10,31 @@ import UIKit
 
 class PictureViewController: UIViewController {
 
-    @IBOutlet weak var purchaseButton: UIButton!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var tagLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    
+    
     @IBOutlet weak var pictureView: UIImageView!
-    @IBOutlet weak var descriptionField: UITextView!
-    @IBOutlet weak var arButton: UIButton!
-    @IBOutlet weak var priceField: UITextField!
-    @IBOutlet weak var tagField: UITextField!
+    
+    
+    
+    
+    @IBAction func arViewButton(_ sender: Any) {
+        print("AR View loading...")
+    }
+    
+    @IBAction func purchaseButton(_ sender: Any) {
+        print("Purchasing item...")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+        backgroundImage.image = #imageLiteral(resourceName: "PictureViewBG")
+        backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
+        self.view.insertSubview(backgroundImage, at: 0)
         // Do any additional setup after loading the view.
     }
     

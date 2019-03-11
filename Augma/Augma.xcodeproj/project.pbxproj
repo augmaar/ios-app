@@ -7,11 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-<<<<<<< HEAD
-		24A6357C2235EEED00369FB4 /* 155226673445593923.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 24A6357B2235EEEC00369FB4 /* 155226673445593923.jpeg */; };
-		24C7267C2234D376000FAA4D /* Lato2OFL in Resources */ = {isa = PBXBuildFile; fileRef = 24C7267A2234D347000FAA4D /* Lato2OFL */; };
-=======
->>>>>>> 81bba8992f8155f112bdb0ddd44a69b7295c1315
 		5040DD682231DBB4008DA313 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9BC088E222CEE8F0025F2A5 /* Info.plist */; };
 		50CDDC382235DFE5002FF718 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CDDC372235DFE5002FF718 /* Grid.swift */; };
 		C609A7662231A6C400522626 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C609A7652231A6C400522626 /* LoginViewController.swift */; };
@@ -33,14 +28,9 @@
 
 /* Begin PBXFileReference section */
 		059F41E5C6D96A310C96BECA /* Pods_Augma.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Augma.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		24A6357B2235EEEC00369FB4 /* 155226673445593923.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 155226673445593923.jpeg; sourceTree = "<group>"; };
-		24C7267A2234D347000FAA4D /* Lato2OFL */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Lato2OFL; sourceTree = "<group>"; };
 		3E418ABAED597E3157396917 /* Pods-Augma.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Augma.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Augma/Pods-Augma.debug.xcconfig"; sourceTree = "<group>"; };
 		4F2FF0D6E996A1760820A7DB /* Pods-Augma.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Augma.release.xcconfig"; path = "Pods/Target Support Files/Pods-Augma/Pods-Augma.release.xcconfig"; sourceTree = "<group>"; };
-<<<<<<< HEAD
-=======
 		50CDDC372235DFE5002FF718 /* Grid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Grid.swift; path = "Augma/Helper Files/Grid.swift"; sourceTree = SOURCE_ROOT; };
->>>>>>> 81bba8992f8155f112bdb0ddd44a69b7295c1315
 		C609A7652231A6C400522626 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C6733C9E2235F4AC00B3F590 /* PictureGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureGridCell.swift; sourceTree = "<group>"; };
 		C68C9D682235EE1E00799C9F /* Lato2OFL */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Lato2OFL; path = Assets.xcassets/Lato2OFL; sourceTree = "<group>"; };
@@ -109,7 +99,6 @@
 		C9BC0881222CEE8C0025F2A5 /* Augma */ = {
 			isa = PBXGroup;
 			children = (
-				24C7267A2234D347000FAA4D /* Lato2OFL */,
 				C9BC0882222CEE8C0025F2A5 /* AppDelegate.swift */,
 				C9BC08A3223338AB0025F2A5 /* Storyboards */,
 				C9BC0894222CF7D00025F2A5 /* View Controllers */,
@@ -128,7 +117,6 @@
 				C6733C9E2235F4AC00B3F590 /* PictureGridCell.swift */,
 				C9BC0899222CF8060025F2A5 /* UploadController.swift */,
 				C9BC089B222CF8190025F2A5 /* ProfileController.swift */,
-				24A6357B2235EEEC00369FB4 /* 155226673445593923.jpeg */,
 				C9BC089D222CF83B0025F2A5 /* PictureViewController.swift */,
 				C9BC089F222CF8470025F2A5 /* ARViewController.swift */,
 				C9BC08A122308A3C0025F2A5 /* PurchaseController.swift */,
@@ -219,12 +207,7 @@
 				C9BC088D222CEE8F0025F2A5 /* LaunchScreen.storyboard in Resources */,
 				5040DD682231DBB4008DA313 /* Info.plist in Resources */,
 				C9BC088A222CEE8F0025F2A5 /* Assets.xcassets in Resources */,
-<<<<<<< HEAD
-				24C7267C2234D376000FAA4D /* Lato2OFL in Resources */,
-				24A6357C2235EEED00369FB4 /* 155226673445593923.jpeg in Resources */,
-=======
 				C68C9D692235EE1E00799C9F /* Lato2OFL in Resources */,
->>>>>>> 81bba8992f8155f112bdb0ddd44a69b7295c1315
 				C9BC0888222CEE8C0025F2A5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,11 +431,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-<<<<<<< HEAD
-				DEVELOPMENT_TEAM = XW5AM5989T;
-=======
 				DEVELOPMENT_TEAM = 9NZM4H7RMP;
->>>>>>> 81bba8992f8155f112bdb0ddd44a69b7295c1315
 				INFOPLIST_FILE = Augma/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -473,11 +452,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-<<<<<<< HEAD
-				DEVELOPMENT_TEAM = XW5AM5989T;
-=======
 				DEVELOPMENT_TEAM = 9NZM4H7RMP;
->>>>>>> 81bba8992f8155f112bdb0ddd44a69b7295c1315
 				INFOPLIST_FILE = Augma/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
