@@ -7,45 +7,50 @@
 //
 
 import UIKit
+import Parse
 
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     
-    @IBOutlet weak var forgotPWButton: UIButton!
-    @IBOutlet weak var createAccountButton: UIButton!
+    @IBAction func signupButton(_ sender: Any) {
+        let user = PFUser()
+        user.username = emailField.text
+        user.password = passwordField.text
+        
+        print(emailField.text!)
+        user.signUpInBackground { (success, error) in
+            if success {
+                self.performSegue(withIdentifier: "menuSegue", sender: nil)
+            } else {
+                print("Error: \(error?.localizedDescription)")
+            }
+        }
+    }
+    
     
     @IBAction func loginButton(_ sender: Any) {
-        print("Email: \(emailField!)")
-        print("Password: \(passwordField!)")
+        let email = emailField.text!
+        let password = passwordField.text!
+        
+        PFUser.logInWithUsername(inBackground: email, password: password) { (user, error) in
+            if user != nil {
+                self.performSegue(withIdentifier: "menuSegue", sender: nil)
+            } else {
+                print("Error: \(error?.localizedDescription)")
+            }
+        }
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
         backgroundImage.image = #imageLiteral(resourceName: "LoginBG")
         backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 0)
-        /*
-        let image = UIImage(named: "LoginBG.png")
-        if (image != nil) {
-            self.view.backgroundColor = UIColor(patternImage: image!)
-        } else {
-            self.view.backgroundColor = UIColor.red
-        }*/
         
-        // Do any additional setup after loading the view.
+        
+
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
