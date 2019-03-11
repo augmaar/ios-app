@@ -11,7 +11,7 @@ import Parse
 import AlamofireImage
 import TagListView
 
-class UploadController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
+class UploadController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate, TagListViewDelegate {
 
     @IBOutlet weak var photoView: UIImageView!
     @IBOutlet weak var tagListView: TagListView!
@@ -24,6 +24,7 @@ class UploadController: UIViewController, UIImagePickerControllerDelegate, UINav
         super.viewDidLoad()
         
         tagsTextField.delegate = self
+        tagListView.delegate = self
 
         tagListView.addTags(tags)
     }
@@ -54,6 +55,7 @@ class UploadController: UIViewController, UIImagePickerControllerDelegate, UINav
         dismiss(animated: true, completion: nil)
     }
     
+    // Add tags from text input field
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         print("return key pressed")
         let input = tagsTextField.text?.components(separatedBy: CharacterSet.whitespaces)
@@ -66,6 +68,12 @@ class UploadController: UIViewController, UIImagePickerControllerDelegate, UINav
         tagListView.addTags(input!)
         
         return true
+    }
+    
+    // Remove tag when tag is tapped
+    func tagPressed(_ title: String, tagView: TagView, sender: TagListView) {
+        tags.removeAll { $0 == title }
+        tagListView.removeTag(title)
     }
 
 }
