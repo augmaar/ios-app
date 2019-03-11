@@ -227,13 +227,25 @@
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EEF-EQ-QWG">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6aq-ST-njY" userLabel="Close Button">
+                                <rect key="frame" x="8" y="20" width="30" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeTapped:" destination="gft-Zq-WX2" eventType="touchUpInside" id="2E3-lb-FQ6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="EEF-EQ-QWG" firstAttribute="top" secondItem="Z5T-1Y-6GL" secondAttribute="top" id="5lA-E8-UmU"/>
                             <constraint firstItem="EEF-EQ-QWG" firstAttribute="bottom" secondItem="0dv-FW-joj" secondAttribute="bottom" id="8cG-5b-TXw"/>
                             <constraint firstItem="EEF-EQ-QWG" firstAttribute="trailing" secondItem="0dv-FW-joj" secondAttribute="trailing" id="PCp-ef-3JY"/>
+                            <constraint firstItem="6aq-ST-njY" firstAttribute="leading" secondItem="0dv-FW-joj" secondAttribute="leading" constant="8" id="PZs-I8-rCy"/>
                             <constraint firstItem="EEF-EQ-QWG" firstAttribute="leading" secondItem="0dv-FW-joj" secondAttribute="leading" id="f1R-jp-VFw"/>
+                            <constraint firstItem="6aq-ST-njY" firstAttribute="top" secondItem="0dv-FW-joj" secondAttribute="top" id="s4s-EW-a5O"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0dv-FW-joj"/>
                     </view>

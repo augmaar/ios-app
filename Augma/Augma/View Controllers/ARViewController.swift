@@ -110,7 +110,10 @@ class ARViewController: UIViewController,ARSCNViewDelegate {
         foundGrid.update(anchor: planeAnchor)
     }
     
-
+    @IBAction func closeTapped(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 
