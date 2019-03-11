@@ -400,13 +400,26 @@
                     <view key="view" contentMode="scaleToFill" id="FSJ-He-ezD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="O2k-SB-pcL">
+                                <rect key="frame" x="70" y="84" width="235" height="235"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="O2k-SB-pcL" secondAttribute="height" multiplier="1:1" id="N0o-Q3-Q9r"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="O2k-SB-pcL" firstAttribute="leading" secondItem="7YD-2O-PUx" secondAttribute="leading" constant="70" id="Jow-xq-A1K"/>
+                            <constraint firstItem="O2k-SB-pcL" firstAttribute="top" secondItem="7YD-2O-PUx" secondAttribute="top" constant="20" id="Wpb-Pz-aN8"/>
+                            <constraint firstItem="7YD-2O-PUx" firstAttribute="trailing" secondItem="O2k-SB-pcL" secondAttribute="trailing" constant="70" id="hvo-wm-QLm"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="7YD-2O-PUx"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HcH-Vo-L0g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4276" y="133"/>
+            <point key="canvasLocation" x="4276" y="132.68365817091455"/>
         </scene>
         <!--Profile Controller-->
         <scene sceneID="izE-ds-VlX">
