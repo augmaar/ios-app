@@ -29,7 +29,7 @@
 		059F41E5C6D96A310C96BECA /* Pods_Augma.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Augma.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E418ABAED597E3157396917 /* Pods-Augma.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Augma.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Augma/Pods-Augma.debug.xcconfig"; sourceTree = "<group>"; };
 		4F2FF0D6E996A1760820A7DB /* Pods-Augma.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Augma.release.xcconfig"; path = "Pods/Target Support Files/Pods-Augma/Pods-Augma.release.xcconfig"; sourceTree = "<group>"; };
-		50CDDC372235DFE5002FF718 /* Grid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Grid.swift; path = "../../../../../Downloads/Assets 2/Grid.swift"; sourceTree = "<group>"; };
+		50CDDC372235DFE5002FF718 /* Grid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Grid.swift; path = "Augma/Helper Files/Grid.swift"; sourceTree = SOURCE_ROOT; };
 		C609A7652231A6C400522626 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C68C9D682235EE1E00799C9F /* Lato2OFL */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Lato2OFL; path = Assets.xcassets/Lato2OFL; sourceTree = "<group>"; };
 		C9BC087F222CEE8C0025F2A5 /* Augma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Augma.app; sourceTree = BUILT_PRODUCTS_DIR; };
