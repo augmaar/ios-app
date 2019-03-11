@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZDG-6A-PJq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FU8-D6-nkZ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -16,46 +16,36 @@
         <array key="Lato-Regular.ttf">
             <string>Lato-Regular</string>
         </array>
-        <array key="Lato-ThinItalic.ttf">
-            <string>Lato-ThinItalic</string>
-        </array>
     </customFonts>
     <scenes>
         <!--Login View Controller-->
         <scene sceneID="eO2-fM-6MV">
             <objects>
-                <viewController id="FU8-D6-nkZ" customClass="LoginViewController" customModule="Augma" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="FU8-D6-nkZ" customClass="LoginViewController" customModule="Augma" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yyT-IR-SfW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your personal art museum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bpo-LK-JqA">
-                                <rect key="frame" x="60" y="261" width="180.5" height="20"/>
+                                <rect key="frame" x="60" y="224" width="181" height="20"/>
                                 <fontDescription key="fontDescription" name="Lato-LightItalic" family="Lato" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jSG-91-q5U">
-                                <rect key="frame" x="60" y="321" width="255" height="30"/>
+                                <rect key="frame" x="60" y="284" width="255" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Lato-LightItalic" family="Lato" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iqD-pz-mPV">
-                                <rect key="frame" x="60" y="359" width="255" height="30"/>
+                                <rect key="frame" x="60" y="322" width="255" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Lato-LightItalic" family="Lato" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7P-2h-3GY">
-                                <rect key="frame" x="161" y="397" width="154" height="33"/>
-                                <fontDescription key="fontDescription" name="Lato-ThinItalic" family="Lato" pointSize="17"/>
-                                <state key="normal" title="Forgot your password?">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZyO-9d-KET">
-                                <rect key="frame" x="60" y="450" width="255" height="33"/>
+                                <rect key="frame" x="60" y="412" width="255" height="33"/>
                                 <color key="backgroundColor" red="0.94464045760000004" green="0.12346269610000001" blue="0.038585284060000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
                                 <state key="normal" title="Log In">
@@ -65,48 +55,47 @@
                                     <action selector="loginButton:" destination="FU8-D6-nkZ" eventType="touchUpInside" id="Wiv-Do-mlE"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J8o-5z-1gd">
-                                <rect key="frame" x="60" y="491" width="123" height="27"/>
-                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
-                                <state key="normal" title="Don't have an account?">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="AugmaAR" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfI-9s-s5i">
-                                <rect key="frame" x="60" y="212" width="135.5" height="37.5"/>
+                                <rect key="frame" x="60" y="170" width="136" height="38"/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="31"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J8o-5z-1gd">
+                                <rect key="frame" x="60" y="461" width="123" height="27"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                <state key="normal" title="Don't have an account?">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="signUpButton:" destination="FU8-D6-nkZ" eventType="touchUpInside" id="4GN-0T-d7E"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="jSG-91-q5U" firstAttribute="top" secondItem="Bpo-LK-JqA" secondAttribute="bottom" constant="40" id="3Z4-nP-jzv"/>
-                            <constraint firstItem="44E-Go-KWO" firstAttribute="bottom" secondItem="J8o-5z-1gd" secondAttribute="bottom" constant="149" id="7lS-er-Cxf"/>
-                            <constraint firstItem="iqD-pz-mPV" firstAttribute="leading" secondItem="44E-Go-KWO" secondAttribute="leading" constant="60" id="Eyf-4R-2kw"/>
-                            <constraint firstItem="J8o-5z-1gd" firstAttribute="leading" secondItem="44E-Go-KWO" secondAttribute="leading" constant="60" id="Gc9-Gc-ehz"/>
-                            <constraint firstItem="Bpo-LK-JqA" firstAttribute="top" secondItem="mfI-9s-s5i" secondAttribute="bottom" constant="11.5" id="HYN-nk-CQz"/>
-                            <constraint firstItem="ZyO-9d-KET" firstAttribute="top" secondItem="d7P-2h-3GY" secondAttribute="bottom" constant="20" id="KCI-jm-yIS"/>
-                            <constraint firstItem="d7P-2h-3GY" firstAttribute="top" secondItem="iqD-pz-mPV" secondAttribute="bottom" constant="8" id="LYK-yj-H9i"/>
-                            <constraint firstItem="mfI-9s-s5i" firstAttribute="leading" secondItem="44E-Go-KWO" secondAttribute="leading" constant="60" id="Ohi-Ui-Sc0"/>
-                            <constraint firstItem="44E-Go-KWO" firstAttribute="trailing" secondItem="iqD-pz-mPV" secondAttribute="trailing" constant="60" id="cHm-iO-Oay"/>
-                            <constraint firstItem="jSG-91-q5U" firstAttribute="leading" secondItem="44E-Go-KWO" secondAttribute="leading" constant="60" id="eZm-XE-CaK"/>
-                            <constraint firstItem="ZyO-9d-KET" firstAttribute="leading" secondItem="44E-Go-KWO" secondAttribute="leading" constant="60" id="giq-Z1-usC"/>
-                            <constraint firstItem="44E-Go-KWO" firstAttribute="trailing" secondItem="ZyO-9d-KET" secondAttribute="trailing" constant="60" id="hjV-0M-6G5"/>
-                            <constraint firstItem="44E-Go-KWO" firstAttribute="trailing" secondItem="jSG-91-q5U" secondAttribute="trailing" constant="60" id="lrD-xD-Ij4"/>
-                            <constraint firstItem="iqD-pz-mPV" firstAttribute="top" secondItem="jSG-91-q5U" secondAttribute="bottom" constant="8" id="oxJ-FM-uVZ"/>
-                            <constraint firstItem="44E-Go-KWO" firstAttribute="trailing" secondItem="d7P-2h-3GY" secondAttribute="trailing" constant="60" id="qFQ-sl-8xV"/>
-                            <constraint firstItem="J8o-5z-1gd" firstAttribute="top" secondItem="ZyO-9d-KET" secondAttribute="bottom" constant="8" id="qbg-HQ-ijm"/>
-                            <constraint firstItem="Bpo-LK-JqA" firstAttribute="leading" secondItem="44E-Go-KWO" secondAttribute="leading" constant="60" id="rbN-gi-Wi2"/>
+                            <constraint firstItem="44E-Go-KWO" firstAttribute="trailing" secondItem="jSG-91-q5U" secondAttribute="trailing" constant="60" id="2Tn-tq-vwJ"/>
+                            <constraint firstItem="ZyO-9d-KET" firstAttribute="top" secondItem="iqD-pz-mPV" secondAttribute="bottom" constant="60" id="4gT-j3-zBs"/>
+                            <constraint firstItem="mfI-9s-s5i" firstAttribute="top" secondItem="44E-Go-KWO" secondAttribute="top" constant="150" id="6ac-Ii-QE4"/>
+                            <constraint firstItem="Bpo-LK-JqA" firstAttribute="top" secondItem="mfI-9s-s5i" secondAttribute="bottom" constant="16" id="7yc-9n-nVO"/>
+                            <constraint firstItem="iqD-pz-mPV" firstAttribute="leading" secondItem="44E-Go-KWO" secondAttribute="leading" constant="60" id="Nmx-VE-efQ"/>
+                            <constraint firstItem="Bpo-LK-JqA" firstAttribute="leading" secondItem="44E-Go-KWO" secondAttribute="leading" constant="60" id="T8y-bs-egu"/>
+                            <constraint firstItem="jSG-91-q5U" firstAttribute="top" secondItem="Bpo-LK-JqA" secondAttribute="bottom" constant="40" id="VDe-Ao-I23"/>
+                            <constraint firstItem="44E-Go-KWO" firstAttribute="trailing" secondItem="iqD-pz-mPV" secondAttribute="trailing" constant="60" id="Zb9-2i-CSU"/>
+                            <constraint firstItem="iqD-pz-mPV" firstAttribute="top" secondItem="jSG-91-q5U" secondAttribute="bottom" constant="8" id="dOX-Xb-nc4"/>
+                            <constraint firstItem="J8o-5z-1gd" firstAttribute="leading" secondItem="44E-Go-KWO" secondAttribute="leading" constant="60" id="eDc-2j-ZOn"/>
+                            <constraint firstItem="mfI-9s-s5i" firstAttribute="leading" secondItem="44E-Go-KWO" secondAttribute="leading" constant="60" id="iDw-2t-Fzw"/>
+                            <constraint firstItem="jSG-91-q5U" firstAttribute="leading" secondItem="44E-Go-KWO" secondAttribute="leading" constant="60" id="qL3-NV-ozB"/>
+                            <constraint firstItem="J8o-5z-1gd" firstAttribute="top" secondItem="ZyO-9d-KET" secondAttribute="bottom" constant="16" id="r5Y-lz-xqy"/>
+                            <constraint firstItem="ZyO-9d-KET" firstAttribute="leading" secondItem="44E-Go-KWO" secondAttribute="leading" constant="60" id="vgQ-dO-xWi"/>
+                            <constraint firstItem="44E-Go-KWO" firstAttribute="trailing" secondItem="ZyO-9d-KET" secondAttribute="trailing" constant="60" id="vpd-3d-1CP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="44E-Go-KWO"/>
                     </view>
                     <connections>
-                        <outlet property="createAccountButton" destination="J8o-5z-1gd" id="YFo-AN-EBo"/>
                         <outlet property="emailField" destination="jSG-91-q5U" id="E1E-bg-c7p"/>
-                        <outlet property="forgotPWButton" destination="d7P-2h-3GY" id="myi-Lq-QLY"/>
                         <outlet property="passwordField" destination="iqD-pz-mPV" id="YoV-MU-kCT"/>
-                        <segue destination="87C-Wv-Tbx" kind="presentation" id="fY7-LB-ChN"/>
+                        <segue destination="87C-Wv-Tbx" kind="presentation" identifier="menuSegue" id="fY7-LB-ChN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ho7-eP-xqm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -116,7 +105,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="QCi-SY-UPf">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="87C-Wv-Tbx" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="87C-Wv-Tbx" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="njb-gd-ODI">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -202,7 +191,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LeL-FN-gne"/>
                     </view>
-                    <navigationItem key="navigationItem" id="o5H-QH-1Og"/>
+                    <navigationItem key="navigationItem" id="o5H-QH-1Og">
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="44g-YZ-wAT">
+                            <connections>
+                                <action selector="logoutButton:" destination="ZDG-6A-PJq" id="Zg3-ty-pfN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="tbO-7w-7kX" id="v6y-Lr-Y3R"/>
                         <outlet property="searchBar" destination="OV2-NL-imr" id="v2s-lA-uOK"/>

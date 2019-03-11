@@ -13,8 +13,7 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
-    
-    @IBAction func signupButton(_ sender: Any) {
+    @IBAction func signUpButton(_ sender: Any) {
         let user = PFUser()
         user.username = emailField.text
         user.password = passwordField.text
