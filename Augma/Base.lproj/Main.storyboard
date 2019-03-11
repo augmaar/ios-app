@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FU8-D6-nkZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZDG-6A-PJq">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -150,19 +150,42 @@
                                 <rect key="frame" x="0.0" y="120" width="375" height="498"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="VrY-p7-DhN">
-                                    <size key="itemSize" width="170" height="165"/>
+                                    <size key="itemSize" width="170" height="205"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="XR8-vJ-h0N">
-                                        <rect key="frame" x="0.0" y="0.0" width="170" height="165"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PictureGridCell" id="XR8-vJ-h0N" customClass="PictureGridCell" customModule="Augma" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="170" height="205"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="170" height="165"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="170" height="205"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="de2-kJ-vLk">
+                                                    <rect key="frame" x="0.0" y="0.0" width="170" height="136"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$75" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="guT-0c-TgA">
+                                                    <rect key="frame" x="132" y="176" width="30" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </view>
+                                        <constraints>
+                                            <constraint firstItem="de2-kJ-vLk" firstAttribute="leading" secondItem="XR8-vJ-h0N" secondAttribute="leading" id="0xf-YK-1ig"/>
+                                            <constraint firstAttribute="bottom" secondItem="guT-0c-TgA" secondAttribute="bottom" constant="8" id="ASY-ps-uMX"/>
+                                            <constraint firstItem="de2-kJ-vLk" firstAttribute="top" secondItem="XR8-vJ-h0N" secondAttribute="top" id="Ei9-Iw-Hfw"/>
+                                            <constraint firstAttribute="trailing" secondItem="guT-0c-TgA" secondAttribute="trailing" constant="8" id="Tfh-ZM-5wf"/>
+                                            <constraint firstAttribute="trailing" secondItem="de2-kJ-vLk" secondAttribute="trailing" id="i1g-nO-WpZ"/>
+                                            <constraint firstItem="guT-0c-TgA" firstAttribute="top" secondItem="de2-kJ-vLk" secondAttribute="bottom" constant="40" id="lMM-AX-qK6"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="pictureView" destination="de2-kJ-vLk" id="qKu-SK-7Lk"/>
+                                            <outlet property="priceLabel" destination="guT-0c-TgA" id="tQA-H9-OgH"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -205,13 +228,27 @@
                     <view key="view" contentMode="scaleToFill" id="Z5T-1Y-6GL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EEF-EQ-QWG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="EEF-EQ-QWG" firstAttribute="top" secondItem="Z5T-1Y-6GL" secondAttribute="top" id="5lA-E8-UmU"/>
+                            <constraint firstItem="EEF-EQ-QWG" firstAttribute="bottom" secondItem="0dv-FW-joj" secondAttribute="bottom" id="8cG-5b-TXw"/>
+                            <constraint firstItem="EEF-EQ-QWG" firstAttribute="trailing" secondItem="0dv-FW-joj" secondAttribute="trailing" id="PCp-ef-3JY"/>
+                            <constraint firstItem="EEF-EQ-QWG" firstAttribute="leading" secondItem="0dv-FW-joj" secondAttribute="leading" id="f1R-jp-VFw"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="0dv-FW-joj"/>
                     </view>
+                    <connections>
+                        <outlet property="sceneView" destination="EEF-EQ-QWG" id="q1h-pm-AJr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bTE-yX-Be5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4276" y="1026"/>
+            <point key="canvasLocation" x="4276" y="1025.9370314842579"/>
         </scene>
         <!--Upload Controller-->
         <scene sceneID="JLK-Ah-qYo">
