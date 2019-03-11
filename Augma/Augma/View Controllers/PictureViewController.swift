@@ -9,7 +9,9 @@
 import UIKit
 
 class PictureViewController: UIViewController {
-
+    
+    var piece: [String:Any]!
+    
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var tagLabel: UILabel!
@@ -35,7 +37,18 @@ class PictureViewController: UIViewController {
         backgroundImage.image = #imageLiteral(resourceName: "PictureViewBG")
         backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 0)
-        // Do any additional setup after loading the view.
+        
+        
+        titleLabel.text = piece["title"] as? String
+        titleLabel.sizeToFit()
+        
+        let baseUrl = "https://image.tmdb.org/t/p/w185"
+        let posterPath = piece["poster_path"] as! String
+        let posterUrl = URL(string: baseUrl + posterPath)
+        
+        pictureView.af_setImage(withURL: posterUrl!)
+        
+        descriptionLabel.text = piece["overview"] as? String
     }
     
 
