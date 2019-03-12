@@ -10,13 +10,34 @@ import UIKit
 
 class PurchaseController: UIViewController {
 
+    var piece: [String:Any]!
+    
+    @IBOutlet weak var pictureView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        loadPiece()
     }
     
-
+    func loadPiece() {
+        titleLabel.text = piece["title"] as? String
+        titleLabel.sizeToFit()
+        
+        let baseUrl = "https://image.tmdb.org/t/p/w185"
+        let posterPath = piece["poster_path"] as! String
+        let posterUrl = URL(string: baseUrl + posterPath)
+        
+        pictureView.af_setImage(withURL: posterUrl!)
+    }
+    
+    @IBAction func cancelTapped(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 
