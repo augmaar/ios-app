@@ -1,5 +1,13 @@
 ## Augma
 
+### Team
+Chase Carnaroli  
+David Bui  
+Lily Pham  
+Rodrigo Leyva  
+Tâm Nguyễn  
+
+
 ### App Description
 Augma AR is an artwork marketplace where users can preview a picture or painting on their own wall using AR. Sellers may upload their original artwork to sell as poster or canvas prints.
 
