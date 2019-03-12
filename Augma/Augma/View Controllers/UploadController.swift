@@ -75,5 +75,10 @@ class UploadController: UIViewController, UIImagePickerControllerDelegate, UINav
         tags.removeAll { $0 == title }
         tagListView.removeTag(title)
     }
+    
+    @IBAction func postButton(_ sender: Any) {
+        print("Button clicked")
+    }
+    
 
 }
