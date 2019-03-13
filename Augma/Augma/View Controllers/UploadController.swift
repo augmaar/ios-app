@@ -19,7 +19,7 @@ class UploadController: UIViewController, UIImagePickerControllerDelegate, UINav
     @IBOutlet weak var tagsTextField: UITextField!
     @IBOutlet weak var titleTextField: UITextField!
     
-    var tags = ["Add", "two", "tags"]
+    var tags = ["art", "painting"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -97,6 +97,8 @@ class UploadController: UIViewController, UIImagePickerControllerDelegate, UINav
                 print("Error saving post")
             }
         }
+        
+        
     }
     
 
