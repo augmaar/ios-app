@@ -17,6 +17,7 @@ class UploadController: UIViewController, UIImagePickerControllerDelegate, UINav
     @IBOutlet weak var tagListView: TagListView!
     @IBOutlet weak var priceTextField: UITextField!
     @IBOutlet weak var tagsTextField: UITextField!
+    @IBOutlet weak var titleTextField: UITextField!
     
     var tags = ["Add", "two", "tags"]
     
@@ -77,7 +78,25 @@ class UploadController: UIViewController, UIImagePickerControllerDelegate, UINav
     }
     
     @IBAction func postButton(_ sender: Any) {
-        print("Button clicked")
+        let post = PFObject(className: "Picture")
+        
+        post["title"] = titleTextField.text
+        post["price"] = priceTextField.text
+        post["tags"] = tags
+        post["seller"] = PFUser.current()
+        
+        let imageData = photoView.image!.pngData()
+        let file = PFFileObject(data: imageData!)
+        post["image"] = file
+        
+        post.saveInBackground { (success, error) in
+            if success {
+                self.dismiss(animated: true, completion: nil)
+                print("Saved!")
+            } else {
+                print("Error saving post")
+            }
+        }
     }
     
 
