@@ -1,10 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-SemiboldItalic.ttf">
+            <string>Lato-SemiboldItalic</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -13,13 +22,54 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="PictureViewBG" translatesAutoresizingMaskIntoConstraints="NO" id="C3c-11-0zg">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="overlay_grid" translatesAutoresizingMaskIntoConstraints="NO" id="Y40-Vz-71A">
+                                <rect key="frame" x="16" y="71" width="343" height="500"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="AugmaAR" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A2k-jz-QPY">
+                                <rect key="frame" x="86" y="149" width="181" height="52"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Lato-SemiboldItalic" family="Lato" pointSize="43"/>
+                                <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="launch_screen_icon" translatesAutoresizingMaskIntoConstraints="NO" id="axH-FU-6dD">
+                                <rect key="frame" x="92" y="249" width="169" height="225"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Y40-Vz-71A" secondAttribute="bottom" constant="96" id="AAB-57-civ"/>
+                            <constraint firstItem="A2k-jz-QPY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="129" id="Bki-Xj-yCB"/>
+                            <constraint firstItem="C3c-11-0zg" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="DiE-R1-lre"/>
+                            <constraint firstItem="C3c-11-0zg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="G1t-qX-uBq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Y40-Vz-71A" secondAttribute="trailing" constant="16" id="HZO-by-vjw"/>
+                            <constraint firstItem="Y40-Vz-71A" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="KRL-78-try"/>
+                            <constraint firstItem="axH-FU-6dD" firstAttribute="top" secondItem="A2k-jz-QPY" secondAttribute="bottom" constant="48" id="U6n-eL-64s"/>
+                            <constraint firstItem="A2k-jz-QPY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="86" id="cB9-yF-BsE"/>
+                            <constraint firstItem="C3c-11-0zg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="cWv-L2-e1A"/>
+                            <constraint firstItem="axH-FU-6dD" firstAttribute="top" secondItem="A2k-jz-QPY" secondAttribute="bottom" constant="48" id="j2B-wU-t2w"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="axH-FU-6dD" secondAttribute="trailing" constant="114" id="kfm-DF-IqO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="A2k-jz-QPY" secondAttribute="trailing" constant="108" id="uaM-Yh-Ocr"/>
+                            <constraint firstItem="C3c-11-0zg" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ujr-6l-NTF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="axH-FU-6dD" secondAttribute="bottom" constant="193" id="uoL-Lq-UZx"/>
+                            <constraint firstItem="axH-FU-6dD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="92" id="xyg-7k-qyb"/>
+                            <constraint firstItem="Y40-Vz-71A" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="51" id="zIb-i4-cPA"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="PictureViewBG" width="881" height="1249"/>
+        <image name="launch_screen_icon" width="225" height="225"/>
+        <image name="overlay_grid" width="512" height="512"/>
+    </resources>
 </document>
