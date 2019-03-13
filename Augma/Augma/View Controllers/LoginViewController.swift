@@ -13,20 +13,11 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
-    @IBAction func signUpButton(_ sender: Any) {
-        let user = PFUser()
-        user.username = emailField.text
-        user.password = passwordField.text
-        
-        user.signUpInBackground { (success, error) in
-            if success {
-                self.performSegue(withIdentifier: "menuSegue", sender: nil)
-            } else {
-                print("Error: \(error?.localizedDescription)")
-            }
-        }
-    }
+    @IBOutlet weak var invalidInputLabel: UILabel!
     
+    @IBAction func noAccButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "signupSegue", sender: nil)
+    }
     
     @IBAction func loginButton(_ sender: Any) {
         let email = emailField.text!
@@ -36,6 +27,7 @@ class LoginViewController: UIViewController {
             if user != nil {
                 self.performSegue(withIdentifier: "menuSegue", sender: nil)
             } else {
+                self.invalidInputLabel.isHidden = false
                 print("Error: \(error?.localizedDescription)")
             }
         }
@@ -43,12 +35,36 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        invalidInputLabel.isHidden = true
+        
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
         backgroundImage.image = #imageLiteral(resourceName: "LoginBG")
         backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 0)
         
-        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: Selector("endEditing:")))
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
+        
+        var swipeDown = UISwipeGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
+        
+        swipeDown.direction = UISwipeGestureRecognizer.Direction.down
+        self.view.addGestureRecognizer(swipeDown)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
 
+    }
+    
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= (keyboardSize.height - 100)
+            }
+        }
+    }
+    
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if self.view.frame.origin.y != 0 {
+            self.view.frame.origin.y = 0
+        }
     }
 }
