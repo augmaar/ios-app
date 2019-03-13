@@ -98,7 +98,7 @@ class UploadController: UIViewController, UIImagePickerControllerDelegate, UINav
             }
         }
         
-        
+        self.tabBarController!.selectedIndex = 0
     }
     
 
