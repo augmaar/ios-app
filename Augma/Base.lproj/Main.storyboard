@@ -36,18 +36,18 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Sign-Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKR-s5-1Lt">
-                                                <rect key="frame" x="133" y="70" width="109" height="38"/>
+                                                <rect key="frame" x="130" y="70" width="115" height="36.5"/>
                                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="31"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wnp-lV-Sr4">
-                                                <rect key="frame" x="16" y="250" width="343" height="30"/>
+                                                <rect key="frame" x="16" y="248.5" width="343" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="Lato-LightItalic" family="Lato" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oh2-j6-t47">
-                                                <rect key="frame" x="209" y="196" width="150" height="30"/>
+                                                <rect key="frame" x="209" y="194.5" width="150" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="150" id="ls1-jb-Fat"/>
                                                     <constraint firstAttribute="height" constant="30" id="q4t-8F-fyc"/>
@@ -57,31 +57,31 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5sM-wu-0n7">
-                                                <rect key="frame" x="16" y="304" width="343" height="30"/>
+                                                <rect key="frame" x="16" y="302.5" width="343" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="Lato-LightItalic" family="Lato" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QWz-8e-hsT">
-                                                <rect key="frame" x="16" y="358" width="343" height="30"/>
+                                                <rect key="frame" x="16" y="356.5" width="343" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="Lato-LightItalic" family="Lato" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address Line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XvB-K4-zAt">
-                                                <rect key="frame" x="16" y="469" width="343" height="30"/>
+                                                <rect key="frame" x="16" y="467.5" width="343" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="Lato-LightItalic" family="Lato" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q9J-Vn-wke" userLabel="City Field">
-                                                <rect key="frame" x="16" y="523" width="343" height="30"/>
+                                                <rect key="frame" x="16" y="521.5" width="343" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="Lato-LightItalic" family="Lato" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="State" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K3T-lU-CRB" userLabel="State Field">
-                                                <rect key="frame" x="16" y="577" width="150" height="30"/>
+                                                <rect key="frame" x="16" y="575.5" width="150" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="150" id="9jZ-nQ-gZG"/>
                                                     <constraint firstAttribute="height" constant="30" id="lkA-Cz-E3e"/>
@@ -91,7 +91,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Zip Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sfx-sJ-dMl">
-                                                <rect key="frame" x="209" y="577" width="150" height="30"/>
+                                                <rect key="frame" x="209" y="575.5" width="150" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="150" id="EI3-WJ-cqI"/>
                                                     <constraint firstAttribute="height" constant="30" id="Ovd-NB-MG2"/>
@@ -101,7 +101,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="* passwords do not match *" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QpI-mT-wdo">
-                                                <rect key="frame" x="16" y="412" width="343" height="17"/>
+                                                <rect key="frame" x="16" y="410.5" width="343" height="17"/>
                                                 <fontDescription key="fontDescription" name="Lato-LightItalic" family="Lato" pointSize="14"/>
                                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -122,7 +122,7 @@
                                                 </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gZs-bu-Sns">
-                                                <rect key="frame" x="16" y="196" width="150" height="30"/>
+                                                <rect key="frame" x="16" y="194.5" width="150" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="Y1L-8D-1Ao"/>
                                                     <constraint firstAttribute="width" constant="150" id="uNI-XQ-fJ7"/>
@@ -132,7 +132,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="* Please fill in all required fields *" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o6v-EG-3MD">
-                                                <rect key="frame" x="16" y="124" width="343" height="17"/>
+                                                <rect key="frame" x="16" y="122.5" width="343" height="17"/>
                                                 <fontDescription key="fontDescription" name="Lato-LightItalic" family="Lato" pointSize="14"/>
                                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -239,25 +239,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your personal art museum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bpo-LK-JqA">
-                                <rect key="frame" x="60" y="224" width="181" height="20"/>
+                                <rect key="frame" x="60" y="222.5" width="199.5" height="20"/>
                                 <fontDescription key="fontDescription" name="Lato-LightItalic" family="Lato" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jSG-91-q5U">
-                                <rect key="frame" x="60" y="284" width="255" height="30"/>
+                                <rect key="frame" x="60" y="282.5" width="255" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Lato-LightItalic" family="Lato" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iqD-pz-mPV">
-                                <rect key="frame" x="60" y="322" width="255" height="30"/>
+                                <rect key="frame" x="60" y="320.5" width="255" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Lato-LightItalic" family="Lato" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZyO-9d-KET">
-                                <rect key="frame" x="60" y="458" width="255" height="33"/>
+                                <rect key="frame" x="60" y="456.5" width="255" height="32"/>
                                 <color key="backgroundColor" red="0.94464045760000004" green="0.12346269610000001" blue="0.038585284060000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
                                 <state key="normal" title="Log In">
@@ -268,13 +268,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="AugmaAR" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfI-9s-s5i">
-                                <rect key="frame" x="60" y="170" width="136" height="38"/>
+                                <rect key="frame" x="60" y="170" width="140" height="36.5"/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="31"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J8o-5z-1gd">
-                                <rect key="frame" x="60" y="507" width="123" height="27"/>
+                                <rect key="frame" x="60" y="504.5" width="128" height="26"/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
                                 <state key="normal" title="Don't have an account?">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -284,7 +284,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*Invalid email/password*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GoG-rl-MKp">
-                                <rect key="frame" x="102" y="376" width="171" height="21"/>
+                                <rect key="frame" x="94.5" y="374.5" width="186.5" height="20"/>
                                 <fontDescription key="fontDescription" name="Lato-LightItalic" family="Lato" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -488,20 +488,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="upload__img_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="PeU-mS-RxS">
-                                <rect key="frame" x="70" y="76" width="235" height="308"/>
+                                <rect key="frame" x="70" y="76" width="235" height="326"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="kXQ-nx-PgD" appends="YES" id="FbJ-oI-9vb"/>
                                 </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price: $" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgB-hE-xGL">
-                                <rect key="frame" x="16" y="456" width="57" height="14"/>
+                                <rect key="frame" x="16" y="474" width="58" height="14"/>
                                 <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8lR-Ui-8xq">
-                                <rect key="frame" x="81" y="448" width="194" height="30"/>
+                                <rect key="frame" x="82" y="466" width="193" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="WC0-us-qHj"/>
                                 </constraints>
@@ -510,7 +510,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tags: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iHH-Zf-v8M">
-                                <rect key="frame" x="16" y="496" width="42" height="25"/>
+                                <rect key="frame" x="16" y="514" width="45" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="LM3-6n-h1d"/>
                                 </constraints>
@@ -519,7 +519,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E2B-Y2-A8O" customClass="TagListView" customModule="TagListView">
-                                <rect key="frame" x="16" y="533" width="343" height="18"/>
+                                <rect key="frame" x="16" y="551" width="343" height="0.0"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="tagBackgroundColor">
@@ -567,13 +567,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r4Z-q9-Ghu">
-                                <rect key="frame" x="16" y="402" width="39" height="30"/>
+                                <rect key="frame" x="16" y="420" width="37" height="30"/>
                                 <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xxr-vI-DQc">
-                                <rect key="frame" x="66" y="402" width="293" height="30"/>
+                                <rect key="frame" x="66" y="420" width="293" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="293" id="sLI-6N-y10"/>
                                 </constraints>
@@ -582,7 +582,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hTo-DT-tum">
-                                <rect key="frame" x="66" y="494" width="293" height="29"/>
+                                <rect key="frame" x="69" y="512" width="290" height="29"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
@@ -852,8 +852,15 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6oh-1F-LXB">
                                 <rect key="frame" x="0.0" y="64" width="375" height="170"/>
                                 <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_profile_pic" translatesAutoresizingMaskIntoConstraints="NO" id="vzL-CX-6Tr">
+                                        <rect key="frame" x="8" y="8" width="83" height="76"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="83" id="1Bb-my-Qn6"/>
+                                            <constraint firstAttribute="height" constant="76" id="dj1-Ra-WPA"/>
+                                        </constraints>
+                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CPx-Me-jEE">
-                                        <rect key="frame" x="0.0" y="75" width="375" height="21"/>
+                                        <rect key="frame" x="99" y="8" width="98.5" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -861,10 +868,11 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="CPx-Me-jEE" firstAttribute="top" secondItem="6oh-1F-LXB" secondAttribute="top" constant="75" id="XLO-SN-zG0"/>
-                                    <constraint firstItem="CPx-Me-jEE" firstAttribute="leading" secondItem="6oh-1F-LXB" secondAttribute="leading" id="Xt9-2H-1HX"/>
-                                    <constraint firstAttribute="trailing" secondItem="CPx-Me-jEE" secondAttribute="trailing" id="YOg-pw-IK9"/>
+                                    <constraint firstItem="CPx-Me-jEE" firstAttribute="top" secondItem="6oh-1F-LXB" secondAttribute="top" constant="8" id="1kv-1K-9MT"/>
+                                    <constraint firstItem="CPx-Me-jEE" firstAttribute="leading" secondItem="vzL-CX-6Tr" secondAttribute="trailing" constant="8" id="O6n-4m-918"/>
                                     <constraint firstAttribute="height" constant="170" id="cpn-WM-43G"/>
+                                    <constraint firstItem="vzL-CX-6Tr" firstAttribute="top" secondItem="6oh-1F-LXB" secondAttribute="top" constant="8" id="kb5-Ym-GvK"/>
+                                    <constraint firstItem="vzL-CX-6Tr" firstAttribute="leading" secondItem="6oh-1F-LXB" secondAttribute="leading" constant="8" id="qP1-As-l8t"/>
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Ztr-JV-yOE">
@@ -993,6 +1001,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="default_profile_pic" width="240" height="240"/>
         <image name="icons-picture-30" width="22.5" height="22.5"/>
         <image name="upload__img_placeholder" width="512" height="512"/>
     </resources>
