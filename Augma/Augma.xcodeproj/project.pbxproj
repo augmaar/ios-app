@@ -109,6 +109,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5039264F2239DBA7005C6F9E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				503926322239D9B6005C6F9E /* Lato-Black.ttf */,
+				503926382239D9B7005C6F9E /* Lato-BlackItalic.ttf */,
+				503926262239D9B3005C6F9E /* Lato-BoldItalic.ttf */,
+				503926312239D9B6005C6F9E /* Lato-Hairline.ttf */,
+				5039262E2239D9B5005C6F9E /* Lato-HairlineItalic.ttf */,
+				5039262A2239D9B5005C6F9E /* Lato-Heavy.ttf */,
+				503926272239D9B4005C6F9E /* Lato-HeavyItalic.ttf */,
+				5039262D2239D9B5005C6F9E /* Lato-Italic.ttf */,
+				5039262B2239D9B5005C6F9E /* Lato-Light.ttf */,
+				503926352239D9B7005C6F9E /* Lato-LightItalic.ttf */,
+				503926362239D9B7005C6F9E /* Lato-Medium.ttf */,
+				5039262F2239D9B5005C6F9E /* Lato-MediumItalic.ttf */,
+				503926302239D9B6005C6F9E /* Lato-Regular.ttf */,
+				503926282239D9B4005C6F9E /* Lato-Semibold.ttf */,
+				503926342239D9B6005C6F9E /* Lato-SemiboldItalic.ttf */,
+				503926292239D9B4005C6F9E /* Lato-Thin.ttf */,
+				5039262C2239D9B5005C6F9E /* Lato-ThinItalic.ttf */,
+				503926372239D9B7005C6F9E /* OFL.txt */,
+				503926332239D9B6005C6F9E /* README.txt */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		C8D83C60157AB9CF495F3B8B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +165,7 @@
 		C9BC0881222CEE8C0025F2A5 /* Augma */ = {
 			isa = PBXGroup;
 			children = (
+				5039264F2239DBA7005C6F9E /* Fonts */,
 				C9BC0882222CEE8C0025F2A5 /* AppDelegate.swift */,
 				C9E72FA92239C63F00DD3EFA /* Models */,
 				C9BC08A3223338AB0025F2A5 /* Storyboards */,
@@ -146,25 +173,6 @@
 				C9BC08A922360A460025F2A5 /* Cells */,
 				C9BC08A622333A1D0025F2A5 /* Helper Files */,
 				C9BC0889222CEE8F0025F2A5 /* Assets.xcassets */,
-				503926322239D9B6005C6F9E /* Lato-Black.ttf */,
-				503926382239D9B7005C6F9E /* Lato-BlackItalic.ttf */,
-				503926262239D9B3005C6F9E /* Lato-BoldItalic.ttf */,
-				503926312239D9B6005C6F9E /* Lato-Hairline.ttf */,
-				5039262E2239D9B5005C6F9E /* Lato-HairlineItalic.ttf */,
-				5039262A2239D9B5005C6F9E /* Lato-Heavy.ttf */,
-				503926272239D9B4005C6F9E /* Lato-HeavyItalic.ttf */,
-				5039262D2239D9B5005C6F9E /* Lato-Italic.ttf */,
-				5039262B2239D9B5005C6F9E /* Lato-Light.ttf */,
-				503926352239D9B7005C6F9E /* Lato-LightItalic.ttf */,
-				503926362239D9B7005C6F9E /* Lato-Medium.ttf */,
-				5039262F2239D9B5005C6F9E /* Lato-MediumItalic.ttf */,
-				503926302239D9B6005C6F9E /* Lato-Regular.ttf */,
-				503926282239D9B4005C6F9E /* Lato-Semibold.ttf */,
-				503926342239D9B6005C6F9E /* Lato-SemiboldItalic.ttf */,
-				503926292239D9B4005C6F9E /* Lato-Thin.ttf */,
-				5039262C2239D9B5005C6F9E /* Lato-ThinItalic.ttf */,
-				503926372239D9B7005C6F9E /* OFL.txt */,
-				503926332239D9B6005C6F9E /* README.txt */,
 				C9BC088E222CEE8F0025F2A5 /* Info.plist */,
 			);
 			path = Augma;
@@ -537,7 +545,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Tam-Nguyen";
+				PRODUCT_BUNDLE_IDENTIFIER = "Tam-Nguyen-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
@@ -558,7 +566,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Tam-Nguyen";
+				PRODUCT_BUNDLE_IDENTIFIER = "Tam-Nguyen-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
