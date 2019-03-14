@@ -83,6 +83,7 @@ class SearchController: UIViewController, UICollectionViewDelegate, UICollection
             return title.lowercased().contains(searchText.lowercased())
         }
         
+        
         collectionView.reloadData()
     }
     
@@ -111,5 +112,9 @@ class SearchController: UIViewController, UICollectionViewDelegate, UICollection
         let delegate = UIApplication.shared.delegate as! AppDelegate
         
         delegate.window?.rootViewController = loginViewController
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder() // hides the keyboard.
     }
 }
