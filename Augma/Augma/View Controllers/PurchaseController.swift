@@ -10,7 +10,7 @@ import UIKit
 
 class PurchaseController: UIViewController {
 
-    var piece: [String:Any]!
+    var piece: Piece?
     
     @IBOutlet weak var pictureView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
@@ -24,14 +24,10 @@ class PurchaseController: UIViewController {
     }
     
     func loadPiece() {
-        titleLabel.text = piece["title"] as? String
+        titleLabel.text = piece!.title
         titleLabel.sizeToFit()
         
-        let baseUrl = "https://image.tmdb.org/t/p/w185"
-        let posterPath = piece["poster_path"] as! String
-        let posterUrl = URL(string: baseUrl + posterPath)
-        
-        pictureView.af_setImage(withURL: posterUrl!)
+        pictureView.image = piece!.image
     }
     
     @IBAction func cancelTapped(_ sender: Any) {

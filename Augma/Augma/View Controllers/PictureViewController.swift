@@ -10,7 +10,7 @@ import UIKit
 
 class PictureViewController: UIViewController {
     
-    var piece: [String:Any]!
+    var piece: Piece?
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
@@ -35,16 +35,12 @@ class PictureViewController: UIViewController {
     }
     
     func loadPiece() {
-        titleLabel.text = piece["title"] as? String
+        titleLabel.text = piece!.title
         titleLabel.sizeToFit()
         
-        let baseUrl = "https://image.tmdb.org/t/p/w185"
-        let posterPath = piece["poster_path"] as! String
-        let posterUrl = URL(string: baseUrl + posterPath)
+        pictureView.image = piece!.image
         
-        pictureView.af_setImage(withURL: posterUrl!)
-        
-        descriptionLabel.text = piece["overview"] as? String
+        //descriptionLabel.text = piece["overview"] as? String
     }
     
 

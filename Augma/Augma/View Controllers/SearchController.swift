@@ -101,7 +101,7 @@ class SearchController: UIViewController, UICollectionViewDelegate, UICollection
         
         let pictureVC = segue.destination as! PictureViewController
         
-        //pictureVC.piece = piece
+        pictureVC.piece = piece
     }
     
     @IBAction func logoutButton(_ sender: Any) {

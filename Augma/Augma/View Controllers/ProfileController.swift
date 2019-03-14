@@ -8,13 +8,14 @@
 
 import UIKit
 import AlamofireImage
+import Parse
 
 class ProfileController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var artwork = [[String:Any]]()
+    var artwork = [Piece]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,25 +32,25 @@ class ProfileController: UIViewController, UICollectionViewDelegate, UICollectio
         let width = (view.frame.size.width - layout.minimumInteritemSpacing * 2) / 2
         layout.itemSize = CGSize(width: width, height: width * 3 / 2)
         
-        let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed")!
+        let query = PFQuery(className: "Picture")
+        //query.includeKeys(["author", "comments", "comments.author"])
         
-        let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
-        let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
-        let task = session.dataTask(with: request) { (data, response, error) in
-            // This will run when the network request returns
-            if let error = error {
-                print(error.localizedDescription)
-            } else if let data = data {
-                let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
-                
-                self.artwork = dataDictionary["results"] as! [[String:Any]]
-                
-                self.collectionView.reloadData()
-                
+        query.findObjectsInBackground { (pics, error) in
+            if let pieces = pics {
+                for pieceDict in pieces {
+                    let imageFile = pieceDict["image"] as! PFFileObject
+                    let url = URL(string: imageFile.url!)!
+                    let data = try? Data(contentsOf: url)
+                    let pic = UIImage(data: data!)
+                    let piece = Piece(title: pieceDict["title"] as! String,
+                                      tags: pieceDict["tags"] as! [String],
+                                      price: pieceDict["price"] as! String,
+                                      image: pic!)
+                    self.artwork.append(piece)
+                    self.collectionView.reloadData()
+                }
             }
         }
-        task.resume()
-        // Do any additional setup after loading the view.
     }
     
 
@@ -60,25 +61,25 @@ class ProfileController: UIViewController, UICollectionViewDelegate, UICollectio
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Cell.PictureGridCell.rawValue, for: indexPath) as! PictureGridCell
         
-        let movie = artwork[indexPath.item]
-        
-        let baseUrl = "https://image.tmdb.org/t/p/w185"
-        let posterPath = movie["poster_path"] as! String
-        let posterUrl = URL(string: baseUrl + posterPath)
-        
-        cell.pictureView.af_setImage(withURL: posterUrl!)
+        let piece = artwork[indexPath.item]
+        cell.pictureView.image = piece.image
         
         return cell
     }
     
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        let cell = sender as! UICollectionViewCell
+        let indexPath = collectionView.indexPath(for: cell)!
+        
+        let piece = artwork[indexPath.row]
+        
+        let pictureVC = segue.destination as! PictureViewController
+        
+        pictureVC.piece = piece
     }
-    */
 
 }
