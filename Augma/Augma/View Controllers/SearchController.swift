@@ -21,6 +21,8 @@ class SearchController: UIViewController, UICollectionViewDelegate, UICollection
     
     var artwork = [Piece]()
     var filteredArtwork = [Piece]()
+    let myRefreshControl = UIRefreshControl()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,11 +38,22 @@ class SearchController: UIViewController, UICollectionViewDelegate, UICollection
         let width = (view.frame.size.width - layout.minimumInteritemSpacing * 2) / 2
         layout.itemSize = CGSize(width: width, height: width * 3 / 2)
         
+        loadPics()
+        myRefreshControl.addTarget(self, action: #selector(loadPics), for: .valueChanged)
+        collectionView.refreshControl = myRefreshControl
+        
+        
+    }
+    
+    
+    @objc func loadPics(){
         let query = PFQuery(className: "Picture")
         //query.includeKeys(["author", "comments", "comments.author"])
         
         query.findObjectsInBackground { (pics, error) in
             if let pieces = pics {
+                self.artwork.removeAll()
+                self.filteredArtwork.removeAll()
                 for pieceDict in pieces {
                     let imageFile = pieceDict["image"] as! PFFileObject
                     let url = URL(string: imageFile.url!)!
@@ -53,11 +66,11 @@ class SearchController: UIViewController, UICollectionViewDelegate, UICollection
                     self.artwork.append(piece)
                     self.filteredArtwork = self.artwork
                     self.collectionView.reloadData()
+                    self.myRefreshControl.endRefreshing()
                 }
             }
         }
     }
-    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return filteredArtwork.count
     }
