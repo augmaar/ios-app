@@ -94,7 +94,7 @@ class UploadController: UIViewController, UIImagePickerControllerDelegate, UINav
                 self.dismiss(animated: true, completion: nil)
                 print("Saved!")
             } else {
-                print("Error saving post")
+                print("Error saving post, \(error?.localizedDescription)")
             }
         }
         

@@ -33,6 +33,9 @@ class ProfileController: UIViewController, UICollectionViewDelegate, UICollectio
         layout.itemSize = CGSize(width: width, height: width * 3 / 2)
         
         let query = PFQuery(className: "Picture")
+        // ToDo: set query to only get results for user
+        query.whereKey("seller", contains: PFUser.current()?.objectId)
+        
         //query.includeKeys(["author", "comments", "comments.author"])
         
         query.findObjectsInBackground { (pics, error) in
@@ -50,6 +53,7 @@ class ProfileController: UIViewController, UICollectionViewDelegate, UICollectio
                     self.collectionView.reloadData()
                 }
             }
+            print(self.artwork)
         }
     }
     
