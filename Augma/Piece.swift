@@ -12,7 +12,7 @@ import Foundation
 struct Piece {
     let title: String
     let tags: [String]
-    let price: Double
+    let price: String
     let image: UIImage
     // let seller: 
 }
