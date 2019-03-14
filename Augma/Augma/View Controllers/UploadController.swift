@@ -28,6 +28,16 @@ class UploadController: UIViewController, UIImagePickerControllerDelegate, UINav
         tagListView.delegate = self
 
         tagListView.addTags(tags)
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
+        
+        let swipeDown = UISwipeGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
+        
+        swipeDown.direction = UISwipeGestureRecognizer.Direction.down
+        self.view.addGestureRecognizer(swipeDown)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+        
     }
    
     @IBAction func onUploadButton(_ sender: Any) {
@@ -37,11 +47,11 @@ class UploadController: UIViewController, UIImagePickerControllerDelegate, UINav
         picker.allowsEditing = true
         
         // If camera available, use camera, else use the photo library
-        if UIImagePickerController.isSourceTypeAvailable(.camera) {
-            picker.sourceType = .camera
-        } else {
+        // changed from just going straight to the library instead of camera
+        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
             picker.sourceType = .photoLibrary
         }
+
         
         present(picker, animated: true, completion: nil)
     }
@@ -99,6 +109,23 @@ class UploadController: UIViewController, UIImagePickerControllerDelegate, UINav
         }
         
         self.tabBarController!.selectedIndex = 0
+    }
+//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        view.endEditing(true)
+//        super.touchesBegan(touches, with: event)
+//    }
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= (keyboardSize.height - 100)
+            }
+        }
+    }
+    
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if self.view.frame.origin.y != 0 {
+            self.view.frame.origin.y = 0
+        }
     }
     
 

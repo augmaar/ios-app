@@ -28,8 +28,6 @@ class SearchController: UIViewController, UICollectionViewDelegate, UICollection
         collectionView.delegate = self
         collectionView.dataSource = self
         searchBar.delegate = self
-        
-        
         let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
         
         layout.minimumLineSpacing = 4 // Space in between ROWS
@@ -59,7 +57,6 @@ class SearchController: UIViewController, UICollectionViewDelegate, UICollection
             }
         }
     }
-    
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return filteredArtwork.count

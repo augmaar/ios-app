@@ -69,9 +69,9 @@ class ARViewController: UIViewController,ARSCNViewDelegate {
         // 1.
         let w = piece!.image.size.width
         let h = piece!.image.size.height
-        let planeGeometry = SCNPlane(width: w, height: h)
+        let planeGeometry = SCNPlane(width: w/h/2, height: h/w/2)
         let material = SCNMaterial()
-        material.diffuse.contents = UIImage(named: "sample-mona-lisa")
+        material.diffuse.contents = piece?.image
         planeGeometry.materials = [material]
         
         // 2.
