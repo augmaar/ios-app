@@ -52,6 +52,9 @@ class PictureViewController: UIViewController {
         if segue.identifier == Segue.Purchase.rawValue {
             let purchaseVC = segue.destination as! PurchaseController
             purchaseVC.piece = piece
+        } else if segue.identifier == Segue.AR.rawValue {
+            let arVC = segue.destination as! ARViewController
+            arVC.piece = piece
         }
     }
     

@@ -15,6 +15,7 @@ class ARViewController: UIViewController,ARSCNViewDelegate {
     
     @IBOutlet weak var sceneView: ARSCNView!
     
+    var piece: Piece?
     var grids = [Grid]()
     
     override func viewDidLoad() {
