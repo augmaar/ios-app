@@ -51,13 +51,12 @@ class ProfileController: UIViewController, UICollectionViewDelegate, UICollectio
         layout.minimumInteritemSpacing = 4
         
         let width = (view.frame.size.width - layout.minimumInteritemSpacing * 2) / 2
-        layout.itemSize = CGSize(width: width, height: width * 3 / 2)
+        layout.itemSize.width = width
         
         let query = PFQuery(className: "Picture")
         // ToDo: set query to only get results for user
         query.whereKey("seller", contains: PFUser.current()?.objectId)
-        
-        //query.includeKeys(["author", "comments", "comments.author"])
+        query.includeKeys(["seller"])
         
         query.findObjectsInBackground { (pics, error) in
             if let pieces = pics {
@@ -95,7 +94,7 @@ class ProfileController: UIViewController, UICollectionViewDelegate, UICollectio
         cell.pictureView.image = piece.image
         cell.artTitleLabel.text = piece.title
         cell.priceLabel.text = "$" + piece.price
-        cell.sellerLabel.text = piece.seller.username
+        cell.sellerLabel.text = piece.seller.object(forKey: "first_name") as! String
         
         return cell
     }
