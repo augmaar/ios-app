@@ -19,6 +19,9 @@
         <array key="Lato-Regular.ttf">
             <string>Lato-Regular</string>
         </array>
+        <array key="Lato-ThinItalic.ttf">
+            <string>Lato-ThinItalic</string>
+        </array>
     </customFonts>
     <scenes>
         <!--SignupView Controller-->
@@ -382,17 +385,28 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="artTitleLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oFl-iJ-9JI">
+                                                    <rect key="frame" x="20" y="140" width="83" height="21"/>
+                                                    <fontDescription key="fontDescription" name="Lato-ThinItalic" family="Lato" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </view>
                                         <constraints>
                                             <constraint firstItem="de2-kJ-vLk" firstAttribute="leading" secondItem="XR8-vJ-h0N" secondAttribute="leading" id="0xf-YK-1ig"/>
+                                            <constraint firstItem="oFl-iJ-9JI" firstAttribute="leading" secondItem="XR8-vJ-h0N" secondAttribute="leading" constant="20" id="4zq-GN-LnA"/>
                                             <constraint firstAttribute="bottom" secondItem="guT-0c-TgA" secondAttribute="bottom" constant="8" id="ASY-ps-uMX"/>
                                             <constraint firstItem="de2-kJ-vLk" firstAttribute="top" secondItem="XR8-vJ-h0N" secondAttribute="top" id="Ei9-Iw-Hfw"/>
+                                            <constraint firstAttribute="bottom" secondItem="oFl-iJ-9JI" secondAttribute="bottom" constant="44" id="LkI-Mb-W44"/>
+                                            <constraint firstItem="oFl-iJ-9JI" firstAttribute="top" secondItem="de2-kJ-vLk" secondAttribute="bottom" constant="4" id="SaT-He-EWa"/>
                                             <constraint firstAttribute="trailing" secondItem="guT-0c-TgA" secondAttribute="trailing" constant="8" id="Tfh-ZM-5wf"/>
+                                            <constraint firstAttribute="trailing" secondItem="oFl-iJ-9JI" secondAttribute="trailing" constant="67" id="TkX-PS-6oc"/>
                                             <constraint firstAttribute="trailing" secondItem="de2-kJ-vLk" secondAttribute="trailing" id="i1g-nO-WpZ"/>
                                             <constraint firstItem="guT-0c-TgA" firstAttribute="top" secondItem="de2-kJ-vLk" secondAttribute="bottom" constant="40" id="lMM-AX-qK6"/>
                                         </constraints>
                                         <connections>
+                                            <outlet property="artTitleLabel" destination="oFl-iJ-9JI" id="XbQ-ef-cUU"/>
                                             <outlet property="pictureView" destination="de2-kJ-vLk" id="qKu-SK-7Lk"/>
                                             <outlet property="priceLabel" destination="guT-0c-TgA" id="tQA-H9-OgH"/>
                                             <segue destination="zI1-zg-x5C" kind="show" identifier="PicturePreviewSegue" id="LVI-lS-msS"/>
@@ -1024,6 +1038,6 @@
         <image name="upload__img_placeholder" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="gSa-34-DWE"/>
+        <segue reference="LVI-lS-msS"/>
     </inferredMetricsTieBreakers>
 </document>

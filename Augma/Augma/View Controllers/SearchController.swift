@@ -80,6 +80,8 @@ class SearchController: UIViewController, UICollectionViewDelegate, UICollection
         
         let piece = filteredArtwork[indexPath.item]
         cell.pictureView.image = piece.image
+        cell.artTitleLabel.text = piece.title
+        cell.priceLabel.text = piece.price
         
         return cell
     }
