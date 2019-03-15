@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class PurchaseController: UIViewController {
 
@@ -16,6 +17,8 @@ class PurchaseController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     
+    @IBOutlet weak var creditCardNameLabel: UITextField!
+    @IBOutlet weak var creditCardNumberLabel: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +38,7 @@ class PurchaseController: UIViewController {
     
     func loadPiece() {
         titleLabel.text = piece!.title
+        priceLabel.text = "$" + piece!.price
         titleLabel.sizeToFit()
         
         pictureView.image = piece!.image
@@ -42,6 +46,37 @@ class PurchaseController: UIViewController {
     
     @IBAction func cancelTapped(_ sender: Any) {
         dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func purchaseTapped(_ sender: Any) {
+        if creditCardNameLabel.text == "" || creditCardNumberLabel.text == "" {
+            let alert = UIAlertController(title: "Missing Required Field", message: "You must enter both your Full Name and Credit Card to purchase a painting", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        } else {
+        
+            let post = PFObject(className: "Order")
+            
+            post["artwork_id"] = piece?.id
+            post["credit_card_name"] = creditCardNameLabel.text
+            post["credit_card_number"] = creditCardNumberLabel.text
+            post["buyer"] = PFUser.current()
+            
+            post.saveInBackground { (success, error) in
+                if success {
+                    print("Saved!")
+                } else {
+                    print("Error saving post, \(error?.localizedDescription)")
+                }
+            }
+            
+            let purchaseAlert = UIAlertController(title: "Purchased!", message: "You have successfully purchased \"\(piece!.title)\"", preferredStyle: .alert)
+            purchaseAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { _ in
+                self.dismiss(animated: true, completion: nil)
+            }))
+            
+            self.present(purchaseAlert, animated: true, completion: nil)
+        }
     }
     
     /*
