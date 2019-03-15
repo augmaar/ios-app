@@ -1001,7 +1001,7 @@
         <scene sceneID="Ji5-Si-LlN">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6Y6-q3-eVy" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" id="KvG-MX-ycJ"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="icons8-customer-32" id="KvG-MX-ycJ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5in-6W-Ust">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -1020,6 +1020,7 @@
     <resources>
         <image name="default_profile_pic" width="240" height="240"/>
         <image name="icons-picture-30" width="22.5" height="22.5"/>
+        <image name="icons8-customer-32" width="24" height="24"/>
         <image name="upload__img_placeholder" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
