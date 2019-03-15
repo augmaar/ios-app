@@ -10,10 +10,12 @@ import UIKit
 import AlamofireImage
 import Parse
 
-class ProfileController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class ProfileController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var profilePicView: UIImageView!
+    @IBOutlet weak var numPiecesLabel: UILabel!
     
     var artwork = [Piece]()
     
@@ -23,6 +25,25 @@ class ProfileController: UIViewController, UICollectionViewDelegate, UICollectio
         collectionView.delegate = self
         collectionView.dataSource = self
         
+        let user = PFUser.current()!
+        var name: String
+        if let first = user["first_name"] {
+            name = first as! String
+            if let last = user["last_name"] {
+                name += " "
+                name += last as! String
+            }
+        } else {
+            name = user["username"] as! String
+        }
+        usernameLabel.text = name
+        
+        if user["profilePic"] != nil {
+            let imageFile = user["profilePic"] as! PFFileObject
+            let urlString = imageFile.url!
+            let url = URL(string: urlString)!
+            profilePicView.af_setImage(withURL: url)
+        }
         
         let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
         
@@ -52,9 +73,12 @@ class ProfileController: UIViewController, UICollectionViewDelegate, UICollectio
                     self.artwork.append(piece)
                     self.collectionView.reloadData()
                 }
+                self.numPiecesLabel.text = "\(self.artwork.count) pieces listed for sale"
             }
             print(self.artwork)
         }
+        
+        
     }
     
 
@@ -84,6 +108,45 @@ class ProfileController: UIViewController, UICollectionViewDelegate, UICollectio
         let pictureVC = segue.destination as! PictureViewController
         
         pictureVC.piece = piece
+    }
+    
+    @IBAction func onChangeProfilePicButton(_ sender: Any) {
+        let picker = UIImagePickerController()
+        picker.delegate = self
+        picker.allowsEditing = true
+        
+        // If camera available, use camera, else use the photo library
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            picker.sourceType = .camera
+        } else {
+            picker.sourceType = .photoLibrary
+        }
+        
+        present(picker, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        let image = info[.editedImage] as! UIImage
+        
+        let size = CGSize(width: 190, height: 190)
+        let scaledImage = image.af_imageAspectScaled(toFill: size)
+        profilePicView.image = scaledImage
+        
+        let imageData = scaledImage.pngData()
+        let file = PFFileObject(data: imageData!)
+        let user = PFUser.current()!
+        user["profilePic"] = file
+        
+        user.saveInBackground { (success, error) in
+            if success {
+                self.dismiss(animated: true, completion: nil)
+                print("Profile picture saved!")
+            } else {
+                print("Error saving profile picture")
+            }
+        }
+        
+        dismiss(animated: true, completion: nil)
     }
 
 }
