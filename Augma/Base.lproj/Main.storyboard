@@ -559,8 +559,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E2B-Y2-A8O" customClass="TagListView" customModule="TagListView">
-                                <rect key="frame" x="16" y="460" width="343" height="18"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E2B-Y2-A8O" customClass="TagListView" customModule="TagListView">
+                                <rect key="frame" x="16" y="460" width="343" height="104"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="tagBackgroundColor">
@@ -636,6 +636,7 @@
                             <constraint firstItem="ci0-Vy-XpK" firstAttribute="trailing" secondItem="E2B-Y2-A8O" secondAttribute="trailing" constant="16" id="GeV-cP-xej"/>
                             <constraint firstItem="ci0-Vy-XpK" firstAttribute="trailing" secondItem="PeU-mS-RxS" secondAttribute="trailing" constant="70" id="IYe-4c-7i3"/>
                             <constraint firstItem="hTo-DT-tum" firstAttribute="top" secondItem="lgB-hE-xGL" secondAttribute="bottom" constant="24" id="Ihx-6A-qUa"/>
+                            <constraint firstItem="dYE-it-RRH" firstAttribute="top" secondItem="E2B-Y2-A8O" secondAttribute="bottom" constant="8" id="JRz-Uh-ou2"/>
                             <constraint firstItem="ci0-Vy-XpK" firstAttribute="trailing" secondItem="8lR-Ui-8xq" secondAttribute="trailing" constant="16" id="L8R-Uy-ue0"/>
                             <constraint firstItem="iHH-Zf-v8M" firstAttribute="leading" secondItem="ci0-Vy-XpK" secondAttribute="leading" constant="16" id="LQD-xE-RaI"/>
                             <constraint firstItem="Xxr-vI-DQc" firstAttribute="leading" secondItem="8lR-Ui-8xq" secondAttribute="leading" id="LhQ-Yy-R4l"/>
