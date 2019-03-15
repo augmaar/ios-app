@@ -841,6 +841,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JYA-tP-aue">
                                 <rect key="frame" x="295" y="617" width="64" height="30"/>
                                 <state key="normal" title="Purchase"/>
+                                <connections>
+                                    <action selector="purchaseTapped:" destination="wMp-0w-05I" eventType="touchUpInside" id="WUF-2b-jeC"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -869,6 +872,8 @@
                         <viewLayoutGuide key="safeArea" id="7YD-2O-PUx"/>
                     </view>
                     <connections>
+                        <outlet property="creditCardNameLabel" destination="D06-Kg-pJU" id="VeU-mG-Fct"/>
+                        <outlet property="creditCardNumberLabel" destination="j62-uj-rs6" id="HJB-7w-QBP"/>
                         <outlet property="pictureView" destination="O2k-SB-pcL" id="5sy-qx-fad"/>
                         <outlet property="priceLabel" destination="PE7-b5-EFJ" id="CFm-L2-sq8"/>
                         <outlet property="titleLabel" destination="EEk-QK-Hxe" id="a4O-rM-x79"/>

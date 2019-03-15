@@ -11,6 +11,7 @@ import Foundation
 import Parse
 
 struct Piece {
+    let id: String
     let title: String
     let tags: [String]
     let price: String

@@ -65,7 +65,8 @@ class ProfileController: UIViewController, UICollectionViewDelegate, UICollectio
                     let url = URL(string: imageFile.url!)!
                     let data = try? Data(contentsOf: url)
                     let pic = UIImage(data: data!)
-                    let piece = Piece(title: pieceDict["title"] as! String,
+                    let piece = Piece(id: pieceDict.objectId!,
+                                      title: pieceDict["title"] as! String,
                                       tags: pieceDict["tags"] as! [String],
                                       price: pieceDict["price"] as! String,
                                       image: pic!,
