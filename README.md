@@ -78,16 +78,17 @@ Evaluate app across the following categories using the [App Evaluation Protocol]
 ---
 ## AR Video Walkthrough
 
-Login/Signup
+## Login/Signup
+
 <img src='https://i.imgur.com/9Oz79bp.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <img src='http://g.recordit.co/MaHw0P1ZYS.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-Upload a picture
+## Upload a picture
 
 <img src='https://i.imgur.com/ub2vcfv.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-Profile page
+## Profile page
 
 <img src='https://i.imgur.com/8QqgTJR.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
