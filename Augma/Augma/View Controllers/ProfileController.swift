@@ -16,7 +16,7 @@ class ProfileController: UIViewController, UICollectionViewDelegate, UICollectio
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var profilePicView: UIImageView!
     @IBOutlet weak var numPiecesLabel: UILabel!
-    
+
     var artwork = [Piece]()
     
     override func viewDidLoad() {
@@ -69,7 +69,8 @@ class ProfileController: UIViewController, UICollectionViewDelegate, UICollectio
                     let piece = Piece(title: pieceDict["title"] as! String,
                                       tags: pieceDict["tags"] as! [String],
                                       price: pieceDict["price"] as! String,
-                                      image: pic!)
+                                      image: pic!,
+                                      seller: pieceDict["seller"] as! PFUser)
                     self.artwork.append(piece)
                     self.collectionView.reloadData()
                 }
@@ -90,7 +91,11 @@ class ProfileController: UIViewController, UICollectionViewDelegate, UICollectio
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Cell.PictureGridCell.rawValue, for: indexPath) as! PictureGridCell
         
         let piece = artwork[indexPath.item]
+
         cell.pictureView.image = piece.image
+        cell.artTitleLabel.text = piece.title
+        cell.priceLabel.text = "$" + piece.price
+        cell.sellerLabel.text = piece.seller.username
         
         return cell
     }

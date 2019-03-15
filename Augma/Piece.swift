@@ -8,11 +8,12 @@
 
 import UIKit
 import Foundation
+import Parse
 
 struct Piece {
     let title: String
     let tags: [String]
     let price: String
     let image: UIImage
-    // let seller: 
+    let seller: PFUser
 }

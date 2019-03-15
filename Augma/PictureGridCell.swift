@@ -12,7 +12,7 @@ class PictureGridCell: UICollectionViewCell {
     
     @IBOutlet weak var pictureView: UIImageView!
     @IBOutlet weak var priceLabel: UILabel!
-    
+    @IBOutlet weak var sellerLabel: UILabel!
     @IBOutlet weak var artTitleLabel: UILabel!
     
 }

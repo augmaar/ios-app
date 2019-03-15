@@ -36,7 +36,8 @@ class SearchController: UIViewController, UICollectionViewDelegate, UICollection
         layout.minimumInteritemSpacing = 4
         
         let width = (view.frame.size.width - layout.minimumInteritemSpacing * 2) / 2
-        layout.itemSize = CGSize(width: width, height: width * 3 / 2)
+        layout.itemSize.width = width
+        
         
         loadPics()
         myRefreshControl.addTarget(self, action: #selector(loadPics), for: .valueChanged)
@@ -48,8 +49,7 @@ class SearchController: UIViewController, UICollectionViewDelegate, UICollection
     
     @objc func loadPics(){
         let query = PFQuery(className: "Picture")
-        //query.includeKeys(["author", "comments", "comments.author"])
-        
+        query.includeKeys(["seller"])
         query.findObjectsInBackground { (pics, error) in
             if let pieces = pics {
                 self.artwork.removeAll()
@@ -62,7 +62,8 @@ class SearchController: UIViewController, UICollectionViewDelegate, UICollection
                     let piece = Piece(title: pieceDict["title"] as! String,
                                       tags: pieceDict["tags"] as! [String],
                                       price: pieceDict["price"] as! String,
-                                      image: pic!)
+                                      image: pic!,
+                                      seller: pieceDict["seller"] as! PFUser)
                     self.artwork.append(piece)
                     self.filteredArtwork = self.artwork
                     self.collectionView.reloadData()
@@ -81,7 +82,8 @@ class SearchController: UIViewController, UICollectionViewDelegate, UICollection
         let piece = filteredArtwork[indexPath.item]
         cell.pictureView.image = piece.image
         cell.artTitleLabel.text = piece.title
-        cell.priceLabel.text = piece.price
+        cell.priceLabel.text = "$" + piece.price
+        cell.sellerLabel.text = piece.seller.object(forKey: "first_name") as! String
         
         return cell
     }
