@@ -76,7 +76,6 @@ Evaluate app across the following categories using the [App Evaluation Protocol]
 ### Product View
 ![ProductView](/Augma/wireframes/ProductView.png?raw=true)
 ---
-## AR Video Walkthrough
 
 ## Login/Signup
 
