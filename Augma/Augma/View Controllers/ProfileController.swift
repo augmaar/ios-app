@@ -27,11 +27,11 @@ class ProfileController: UIViewController, UICollectionViewDelegate, UICollectio
         
         let user = PFUser.current()!
         var name: String
-        if let first = user["first_name"] {
-            name = first as! String
-            if let last = user["last_name"] {
+        if user["first_name"] != nil {
+            name = user["first_name"] as! String
+            if user["last_name"] != nil {
                 name += " "
-                name += last as! String
+                name += user["last_name"] as! String
             }
         } else {
             name = user["username"] as! String
@@ -65,7 +65,8 @@ class ProfileController: UIViewController, UICollectionViewDelegate, UICollectio
                     let url = URL(string: imageFile.url!)!
                     let data = try? Data(contentsOf: url)
                     let pic = UIImage(data: data!)
-                    let piece = Piece(title: pieceDict["title"] as! String,
+                    let piece = Piece(id: pieceDict.objectId!,
+                                      title: pieceDict["title"] as! String,
                                       tags: pieceDict["tags"] as! [String],
                                       price: pieceDict["price"] as! String,
                                       image: pic!,

@@ -28,6 +28,7 @@
 		5039264B2239DA10005C6F9E /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 503926332239D9B6005C6F9E /* README.txt */; };
 		5040DD682231DBB4008DA313 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9BC088E222CEE8F0025F2A5 /* Info.plist */; };
 		50CDDC382235DFE5002FF718 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CDDC372235DFE5002FF718 /* Grid.swift */; };
+		B4991AC5223B513F00FC8F58 /* CloudVisionsAPICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4991AC4223B513F00FC8F58 /* CloudVisionsAPICaller.swift */; };
 		C609A7662231A6C400522626 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C609A7652231A6C400522626 /* LoginViewController.swift */; };
 		C669D8CC2238DF03002FB56D /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C669D8CB2238DF03002FB56D /* SignupViewController.swift */; };
 		C6733C9F2235F4AC00B3F590 /* PictureGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6733C9E2235F4AC00B3F590 /* PictureGridCell.swift */; };
@@ -70,6 +71,7 @@
 		503926372239D9B7005C6F9E /* OFL.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		503926382239D9B7005C6F9E /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BlackItalic.ttf"; sourceTree = "<group>"; };
 		50CDDC372235DFE5002FF718 /* Grid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Grid.swift; path = "Augma/Helper Files/Grid.swift"; sourceTree = SOURCE_ROOT; };
+		B4991AC4223B513F00FC8F58 /* CloudVisionsAPICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudVisionsAPICaller.swift; sourceTree = "<group>"; };
 		C609A7652231A6C400522626 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C669D8CB2238DF03002FB56D /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		C6733C9E2235F4AC00B3F590 /* PictureGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureGridCell.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 				C9BC08A622333A1D0025F2A5 /* Helper Files */,
 				C9BC0889222CEE8F0025F2A5 /* Assets.xcassets */,
 				C9BC088E222CEE8F0025F2A5 /* Info.plist */,
+				B4991AC4223B513F00FC8F58 /* CloudVisionsAPICaller.swift */,
 			);
 			path = Augma;
 			sourceTree = "<group>";
@@ -385,6 +388,7 @@
 				C9BC089E222CF83B0025F2A5 /* PictureViewController.swift in Sources */,
 				C6733C9F2235F4AC00B3F590 /* PictureGridCell.swift in Sources */,
 				C669D8CC2238DF03002FB56D /* SignupViewController.swift in Sources */,
+				B4991AC5223B513F00FC8F58 /* CloudVisionsAPICaller.swift in Sources */,
 				C609A7662231A6C400522626 /* LoginViewController.swift in Sources */,
 				C9E72FAB2239C65500DD3EFA /* Piece.swift in Sources */,
 				C9BC0883222CEE8C0025F2A5 /* AppDelegate.swift in Sources */,
