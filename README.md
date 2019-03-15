@@ -84,6 +84,10 @@ Upload a picture
 
 <img src='https://i.imgur.com/ub2vcfv.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
+Profile page
+
+<img src='https://i.imgur.com/8QqgTJR.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 ### App Pitch Presentation Deck
 Augma AR is an artwork marketplace where users can preview a picture or painting on their own wall using AR. Sellers may upload their original artwork to sell as poster or canvas prints. Upon opening the application, the user is prompted with a login page that allows the user to either log in with their account or create an account if they do not yet have one. Not only did we focus on easy usability, we also focused on design and a clean interface. In order to achieve this look for the login page. We carefully selected images related to our overall app theme and then proceeded the blur the backround and also add a dimming effect, which resulted in a much cleaner and readable interface. 
 
