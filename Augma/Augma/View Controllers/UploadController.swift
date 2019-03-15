@@ -19,7 +19,7 @@ class UploadController: UIViewController, UIImagePickerControllerDelegate, UINav
     @IBOutlet weak var tagsTextField: UITextField!
     @IBOutlet weak var titleTextField: UITextField!
     
-    var tags = ["art", "painting"]
+    var tags = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,6 +62,8 @@ class UploadController: UIViewController, UIImagePickerControllerDelegate, UINav
         let size = CGSize(width: 300, height: 300)
         let scaledImage = image.af_imageAspectScaled(toFit: size)
         photoView.image = scaledImage
+        
+        analyzeImage()
         
         dismiss(animated: true, completion: nil)
     }
@@ -128,5 +130,28 @@ class UploadController: UIViewController, UIImagePickerControllerDelegate, UINav
         }
     }
     
+    func analyzeImage() {
+        //var dataDict = [String:String]()
+        CloudVisionsAPICaller().detect(from: photoView.image!) { myResult in
+//            guard let myResult = myResult else {
+//                fatalError("Did not recognize image")
+//            }
+            let dataDict = myResult as! NSDictionary
+            let labels = dataDict["responses"]! as! [Any]
+            let labelannot = labels[0] as! [String:Any]
+            let labelAnnotations = labelannot["labelAnnotations"] as! [NSDictionary]
+            print(labelAnnotations)
+            self.addSuggestedTags(labels: labelAnnotations)
+        }
+        
+    }
+    
+    func addSuggestedTags(labels: [NSDictionary]) {
+        for dict in labels {
+            let description = dict["description"] as! String
+            let descriptionParsed = description.components(separatedBy: CharacterSet.whitespaces)
+            tagListView.addTags(descriptionParsed)
+        }
+    }
 
 }

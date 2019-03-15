@@ -27,11 +27,11 @@ class ProfileController: UIViewController, UICollectionViewDelegate, UICollectio
         
         let user = PFUser.current()!
         var name: String
-        if let first = user["first_name"] {
-            name = first as! String
-            if let last = user["last_name"] {
+        if user["first_name"] != nil {
+            name = user["first_name"] as! String
+            if user["last_name"] != nil {
                 name += " "
-                name += last as! String
+                name += user["last_name"] as! String
             }
         } else {
             name = user["username"] as! String
