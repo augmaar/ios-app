@@ -82,6 +82,8 @@ Evaluate app across the following categories using the [App Evaluation Protocol]
 
 <img src='https://i.imgur.com/9Oz79bp.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
+## Augmented Reality (AR) View
+
 <img src='http://g.recordit.co/MaHw0P1ZYS.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Upload a picture
