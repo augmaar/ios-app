@@ -42,7 +42,7 @@ class PictureViewController: UIViewController {
         var last_name: String = piece!.seller.object(forKey: "last_name") as! String
         var name: String = first_name + " " + last_name + "\n" + user
         descriptionLabel.text = name
-        priceLabel.text = "$" + piece?.price
+        priceLabel.text = "$" + (piece?.price)!
         
         pictureView.image = piece!.image
         
