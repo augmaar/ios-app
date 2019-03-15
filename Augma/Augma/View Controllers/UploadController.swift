@@ -148,9 +148,11 @@ class UploadController: UIViewController, UIImagePickerControllerDelegate, UINav
     
     func addSuggestedTags(labels: [NSDictionary]) {
         for dict in labels {
+            //if dict["score"] as! Double > 0.8 {
             let description = dict["description"] as! String
             let descriptionParsed = description.components(separatedBy: CharacterSet.whitespaces)
             tagListView.addTags(descriptionParsed)
+            //}
         }
     }
 
