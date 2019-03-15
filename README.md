@@ -102,3 +102,9 @@ Augma AR is an artwork marketplace where users can preview a picture or painting
 After logging in, the user is taken to the the gallery view where the user can see all of the artwork and photos that have been uploaded by other users. The user can also sort and search up for specific pieces by name or by category. After selecting on an image, the user is taken to the product page to see more information about the selected image. The user can also choose to buy the image or view the image in AR. We also created three easy buttons at the bottom that are always displayed so that the user can more easily navigate through the system if they ever want a quick and easy access to their profile page or if they want to upload a photo. 
 
 If the user selects on the "buy" button, the user is taken to the transactions page where the user can input their information and payment info. Otherwise if the user selects the "AR" button, the user is taken to the AR view where they can preview what the image would look like on their wall. 
+
+---
+### Future Implementation/Ideas
+
+User can Resize or add frames while in AR mode. Also using AR users can scan a real world 3D object and upload that object instead of a 2D image making the 3D object avialable to other users who want to purchase, so they can have a better understanding of how the object would actually look using AR. Also may not be limited to just paintings could expand on the idea of a 3D market where users can scan anything in AR and upload it so that other users can see the product. 
+
