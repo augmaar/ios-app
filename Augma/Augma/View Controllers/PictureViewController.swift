@@ -37,8 +37,15 @@ class PictureViewController: UIViewController {
     func loadPiece() {
         titleLabel.text = piece!.title
         titleLabel.sizeToFit()
+        let user: String = piece!.seller.username as! String
+        var first_name: String = piece!.seller.object(forKey: "first_name") as! String
+        var last_name: String = piece!.seller.object(forKey: "last_name") as! String
+        var name: String = first_name + " " + last_name + "\n" + user
+        descriptionLabel.text = name
+        
         
         pictureView.image = piece!.image
+        
         
         //descriptionLabel.text = piece["overview"] as? String
     }
