@@ -80,6 +80,10 @@ Evaluate app across the following categories using the [App Evaluation Protocol]
 
 ### Product View
 ![ProductView](/Augma/wireframes/ProductView.png?raw=true)
+---
+## AR Video Walkthrough
+
+<img src='http://g.recordit.co/ppYyJStpYx.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ### App Pitch Presentation Deck
 Augma AR is an artwork marketplace where users can preview a picture or painting on their own wall using AR. Sellers may upload their original artwork to sell as poster or canvas prints. Upon opening the application, the user is prompted with a login page that allows the user to either log in with their account or create an account if they do not yet have one. Not only did we focus on easy usability, we also focused on design and a clean interface. In order to achieve this look for the login page. We carefully selected images related to our overall app theme and then proceeded the blur the backround and also add a dimming effect, which resulted in a much cleaner and readable interface. 
@@ -87,8 +91,3 @@ Augma AR is an artwork marketplace where users can preview a picture or painting
 After logging in, the user is taken to the the gallery view where the user can see all of the artwork and photos that have been uploaded by other users. The user can also sort and search up for specific pieces by name or by category. After selecting on an image, the user is taken to the product page to see more information about the selected image. The user can also choose to buy the image or view the image in AR. We also created three easy buttons at the bottom that are always displayed so that the user can more easily navigate through the system if they ever want a quick and easy access to their profile page or if they want to upload a photo. 
 
 If the user selects on the "buy" button, the user is taken to the transactions page where the user can input their information and payment info. Otherwise if the user selects the "AR" button, the user is taken to the AR view where they can preview what the image would look like on their wall. 
----
-### AR Walkthough GIF
-
-
-<img src="http://recordit.co/ppYyJStpYx" width=250><br>
