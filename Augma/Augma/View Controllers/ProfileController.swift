@@ -121,13 +121,10 @@ class ProfileController: UIViewController, UICollectionViewDelegate, UICollectio
         picker.allowsEditing = true
         
         // If camera available, use camera, else use the photo library
-        if UIImagePickerController.isSourceTypeAvailable(.camera) {
-            picker.sourceType = .camera
-        } else {
+        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
             picker.sourceType = .photoLibrary
+            present(picker, animated: true, completion: nil)
         }
-        
-        present(picker, animated: true, completion: nil)
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
