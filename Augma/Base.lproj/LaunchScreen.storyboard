@@ -30,14 +30,14 @@
                                 <rect key="frame" x="16" y="71" width="343" height="500"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="AugmaAR" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A2k-jz-QPY">
-                                <rect key="frame" x="86" y="149" width="181" height="52"/>
+                                <rect key="frame" x="97" y="149" width="181" height="52"/>
                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Lato-SemiboldItalic" family="Lato" pointSize="43"/>
                                 <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="launch_screen_icon" translatesAutoresizingMaskIntoConstraints="NO" id="axH-FU-6dD">
-                                <rect key="frame" x="92" y="249" width="169" height="225"/>
+                                <rect key="frame" x="75" y="249" width="225" height="225"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -49,14 +49,12 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Y40-Vz-71A" secondAttribute="trailing" constant="16" id="HZO-by-vjw"/>
                             <constraint firstItem="Y40-Vz-71A" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="KRL-78-try"/>
                             <constraint firstItem="axH-FU-6dD" firstAttribute="top" secondItem="A2k-jz-QPY" secondAttribute="bottom" constant="48" id="U6n-eL-64s"/>
-                            <constraint firstItem="A2k-jz-QPY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="86" id="cB9-yF-BsE"/>
                             <constraint firstItem="C3c-11-0zg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="cWv-L2-e1A"/>
+                            <constraint firstItem="A2k-jz-QPY" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="hn8-h5-hxZ"/>
                             <constraint firstItem="axH-FU-6dD" firstAttribute="top" secondItem="A2k-jz-QPY" secondAttribute="bottom" constant="48" id="j2B-wU-t2w"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="axH-FU-6dD" secondAttribute="trailing" constant="114" id="kfm-DF-IqO"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="A2k-jz-QPY" secondAttribute="trailing" constant="108" id="uaM-Yh-Ocr"/>
+                            <constraint firstItem="axH-FU-6dD" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="t2H-pV-NAi"/>
                             <constraint firstItem="C3c-11-0zg" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ujr-6l-NTF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="axH-FU-6dD" secondAttribute="bottom" constant="193" id="uoL-Lq-UZx"/>
-                            <constraint firstItem="axH-FU-6dD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="92" id="xyg-7k-qyb"/>
                             <constraint firstItem="Y40-Vz-71A" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="51" id="zIb-i4-cPA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
