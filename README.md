@@ -73,7 +73,7 @@ Evaluate app across the following categories using the [App Evaluation Protocol]
 
 ## Augmented Reality (AR) View
 
-<img src='http://g.recordit.co/MaHw0P1ZYS.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/augmaar/ios-app/blob/master/gifs/ar.gif?raw=true' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Upload a picture
 
