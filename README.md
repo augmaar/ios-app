@@ -66,17 +66,7 @@ Evaluate app across the following categories using the [App Evaluation Protocol]
  * Profile Screen
 
 ---
-### Wireframes
-### Login View
-![LoginView](/Augma/wireframes/LoginView.png?raw=true)
-
-### Gallery View
-![GalleryView](/Augma/wireframes/GalleryView.png?raw=true)
-
-### Product View
-![ProductView](/Augma/wireframes/ProductView.png?raw=true)
----
-
+### Walkthroughs
 ## Login/Signup
 
 <img src='https://i.imgur.com/9Oz79bp.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
